@@ -39,7 +39,7 @@
 			*MATERIAL_XP_TYPE Filter
 		}
 		*SUBMATERIAL 1 {
-			*MATERIAL_NAME "textures/vega/white_nonsolid"
+			*MATERIAL_NAME "textures/vega_custom/white_nonsolid"
 			*MATERIAL_CLASS "Standard"
 			*MATERIAL_AMBIENT 0.0000   0.0000   0.0000
 			*MATERIAL_DIFFUSE 1.0000   1.0000   1.0000

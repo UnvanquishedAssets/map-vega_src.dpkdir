@@ -1,0 +1,283 @@
+July 26, 2015
+=============================================================================
+
+Title                   : Vega Industries: Research Outpost 13 (beta 2)
+
+Filename:               : map-vega-beta2.pk3
+
+Author                  : Stijn "Ingar" Buys
+
+Email Address           : ingar@telenet.be
+
+Web Site(s)             : http://ingar.satgnu.net
+
+Description             : Map for the open source game Unvanquished
+                          http://www.unvanquished.net
+
+Credits to              : ID-Software for Quake III Arena,
+                          darklegion for Tremulous,
+                          the Unvanquished Development Team
+
+=============================================================================
+
+	All files in this pk3 archive are available under the 
+	conditions of the Creative Commons License
+	http://creativecommons.org/licenses/by-sa/3.0
+
+=============================================================================
+
+	For my father, he deserves a monument.
+	
+=============================================================================
+
+VEGA INDUSTRIES: RESEARCH OUTPOST 13
+
+	Vega Industries
+	Research Outpost 13
+
+	Large corporations take their research very serious. Only the
+	smartest and brightest are hired, and no effort is spared
+	to protect these valuable human resources from harm.
+
+	Research Outpost 13 was probably the safest place in the universe.
+	On a small planet with a harsh and frozen climate, hidden in
+	an otherwise uninteresting part of the galaxy, the outpost provided
+	a well-protected shelter from the hostile environment. And
+	like outposts usually do, it harboured a strange sense of tranquility,
+	that given enough time would drive anyone insane with boredom.
+
+	This funny green creature was a most welcome diversion. It had hidden
+	itself inside a cargo container on the monthly supply run, and when
+	the scientists found it, hungry and exhausted, they couldn't resist
+	but to offer the poor creature some milk and cookies.
+
+	Kyp... a funny name for a funny creature. 
+
+	Kyp didn't mind all the running around and neurotic button pushing.
+	After all, these weren't the usual kind of scientists: they seemed
+	more interested in keeping their machines running than indecently 
+	prodding caged creatures with their devices.
+
+	As usually happens in large corporations, the janitor was the first
+	to notice something had gone terribly wrong. Kyp's cage hade been
+	left wide open and the creature was nowhere to be found. "This is
+	no place to leave little creatures wandering around", the janitor
+	murmured peevishly. "And who do you think will have to clean up all
+	the surprises it is going to leave behind?"
+
+	The echo of an eerie sound interrupted his grumbling. The power
+	supply had been acting weird all morning, and most of the equipment
+	seemed to disagree with their blueprint specifications. "That damned
+	rodent must have been shewing the cables. A few high-voltage jolts
+	will teach it some manners. Serves him well." The idea almost 
+	brought a smile to the janitor's face.
+
+	Almost.
+
+	The monster breathing down his neck was far from green and cuddly. 
+	If anything, it looked like the scientists had delved too eagerly
+	and too deep and had awakened something that should have been
+	left alone. Two seconds later, the janitor's blood-stained 
+	broom hits the floor.
+
+	(To be continued)
+	
+	The tyrant was hardly impressed by the janitor's last screaming moments.
+	Humans are usually tasty and sweet, but the aroma of adrenaline	had spoiled 
+	the meat with a lingering bitter taste. What he wanted, was men with courage.
+	Men who wouldn't waver at the sight of his deadly teeth. Men, who'd provide
+	him a banquet with the delicious taste of heroism.
+	
+	Or women, for those who'd prefer a somewhat softer kind of meat.
+	
+SKYBOX
+
+	The Skybox was created with the personal edition of Terragen Classic
+	http://www.planetside.co.uk/
+
+	I used Spirit's tutorial and skybox scripts
+	http://maps.sp1r1t.org/tutorials/q3a_create_skybox/
+
+TEXTURES
+
+        The texture set for Unvanquished is a complete overhaul of the texture set
+	of the Tremulous map. They were created from pictures and edited with the GIMP.
+	The Vega Industries logos were made with Inkscape. Normal maps were
+	generated with Blender and the GIMP.
+
+	Contact me if you're interested in the original high-res images.
+	
+	The Easter Eggs cartoon was made by Josky=KCT=.
+
+MODELS
+
+	The monitor model and texture were made by f0rqu3.
+	The monitor display textures were made by Ingar, 
+	display background by Karvajalka.
+
+	The sign model was created by Karvajalka, textures by Ingar.
+
+	The ceiling light models and textures were created by Karvajalka.
+
+	The terminal model and textures were made by Karvajalka.
+
+	The console model was made by Thorn.
+
+	The toolcart and animated pump models were made by Thorn,
+	textures by Thorn & Ingar.
+
+	The container and plant models and textures were made by Ingar.
+
+	The vehicle model was made by Ingar, the texture was generously
+	donated by TraK.
+
+	The fire extinguisher model was taken from the Tremulous map
+	"Sector B17" and was made by gareth.
+	http://tremulous.net/forum/index.php?topic=4478.0
+
+	The globe model was made by Ingar. 
+	The globe texture was created by Jeremy "Jestr" Gardner. 
+	The original, high-resolution version can be downloaded here:
+	http://www.celestiamotherlode.net/catalog/show_addon_details.php?addon_id=227
+
+	The blue plastic container model and the rack model were taken from 
+	the Tremulous map "Metro" and were made by KOsAD
+	http://sites.google.com/site/kosad93/metro.html
+
+SOUNDS
+
+	The sounds were edited with Audacity. I used my own recordings
+	and a number of sounds from the pdsounds collection.
+	http://www.pdsounds.org/
+
+	The synthloops were made with ZynAddSubFX.
+
+STATISTICS
+
+	q3map2 -leaktest -samplesize 8 -meta
+	q3map2 -vis -saveprt -hint
+	q3map2 -nocollapse -nosRGB -deluxe -fast -shade -dirty -patchshadows -samples 3 -samplesize 8 -bounce 8 -bouncegrid -lightmapsize 1024 -external
+
+	Compile time: 21 minutes (Intel i5-2500K)
+	17931 brushes, 1788 patches, 107 model instances, 375 entities total
+
+THANKS
+
+	Thorn[mDc] for the models, testing and advice
+	gareth for the fire extinguisher model and support
+	StalKermit for support
+
+	Karvajalka for the awesome models
+	maci for hosting on satgnu
+	Lava_Croft for testing and advice
+	#satgnu for support
+
+	f0rqu3 for the model and testing
+
+	Jestr for the globe texture
+
+	KOsAD for the models
+
+	Taiyo.uk for the slime shader and trigger example from the Tremulous map "Slimepunk"
+	
+	Georges 'TRaK' Grondin for the vehicle model texture.
+
+	The contributors of the pdsounds collection.
+
+	#tremulous on the freenode IRC network
+	
+	#unvanquished-dev on the freenode IRC network
+
+	All =KCT= members
+
+HISTORY
+
+	2015-07-26
+		beta 2
+		first official Unvanquished release
+		
+		complete texture overhaul
+		fixed a number of issues caused by the change of engine
+		removed q3map2 lightstyles
+		made the storage room slightly larger
+		improved lighting
+		replaced a number of vent textures with brushwork
+		improved console monitor screens
+		added extra posters
+		
+	2010-09-10
+		beta 1
+		first official Tremulous release
+
+		improved pipe construction on the upper level
+		raised the vehicle above the floot
+		added broken door sound to the workshop door
+		added flashlight near the workshop
+		added wheeltracks in the outside area
+		changed office lamp
+		improved terminal screens
+		improved vehicle skin
+		improved console skin
+
+	2010-09-08
+		pre-release 10
+
+		added extra ventilation shaft
+		lowered pipes below the corridor floors
+		improved plasma tube shader
+		added signs
+		added fire extinguisher model from sector b17
+		added blue container and rack models from metro
+		added more target_speakers and target_locations
+		updated office interior
+		added office exterior scenery and smoke particles
+		added animated pump model and associated shaders
+		added plant2 roots
+
+	2010-08-22
+		pre-release 9
+
+		changed layout of the mixer hall
+		crate spam
+		added vehicle model
+		moved default bases
+		updated the company slogan
+
+	2010-08-16
+		pre-release 8
+
+		renamed map to "Vega Industries: Research Outpost 13"
+		added logos
+		added ase models
+		optimized vis
+		changed metal stairs layout
+		changed holo emitter sound
+
+	2010-08-08
+		pre-release 7
+
+	2010-04-12
+		pre-release 6
+
+	2010-04-06
+		pre-release 5
+
+	2010-04-05
+		pre-release 4
+
+	2010-01-24
+		pre-release 3
+
+	2010-01-10
+		pre-release 2
+
+	2009-12-25
+		pre-release 1
+
+		initial pre-release
+		initial texture set release
+	
+	2009-12-12
+		first texture
+
+Questions, bugs or suggestions? Send them to ingar@telenet.be

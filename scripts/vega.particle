@@ -1,15 +1,16 @@
-// particles for the Tremulous map "Vega Industries: Research Outpost 13"
-// written by Ingar
-// 
+//
+// Unvanquished particles file for the map
+// Vega industries: Research Outpust 13
+//
 
 // bubbles for the plant aquarium
-particles/mapobjects/vega/bubbles
+particles/vega_custom/bubbles
 {
 	ejector
 	{
 		particle
 		{
-		shader sync textures/vega/water_bubble
+		shader sync textures/vega_custom/water_bubble
 		displacement -4 -4 -4 ~8
 
 		velocityType		static
@@ -39,13 +40,13 @@ particles/mapobjects/vega/bubbles
 }
 
 // smoke for the chimney at the office exterior
-particles/mapobjects/vega/smoke
+particles/vega_custom/smoke
 {
 	ejector
 	{
 		particle
 		{
-		shader sync textures/vega/smoke
+		shader sync textures/vega_custom/smoke
 		displacement -16 -16 -16 ~32
 		
 		velocityType		static
