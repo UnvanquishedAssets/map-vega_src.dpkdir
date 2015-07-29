@@ -20,8 +20,8 @@ Credits to              : ID-Software for Quake III Arena,
 
 =============================================================================
 
-	All files in this pk3 archive are available under the 
-	conditions of the Creative Commons License
+	The map Vega Industries: Research Outpost 13 and related assets
+	are available under the	conditions of the Creative Commons License
 	http://creativecommons.org/licenses/by-sa/3.0
 
 =============================================================================
@@ -89,6 +89,8 @@ VEGA INDUSTRIES: RESEARCH OUTPOST 13
 	him a banquet with the delicious taste of heroism.
 	
 	Or women, for those who'd prefer a somewhat softer kind of meat.
+	
+	(To be continued)
 	
 SKYBOX
 
