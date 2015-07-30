@@ -3,13 +3,12 @@ July 26, 2015
 
 Title                   : Vega Industries: Research Outpost 13 (beta 2)
 
-Filename:               : map-vega-beta2.pk3
-
 Author                  : Stijn "Ingar" Buys
 
 Email Address           : ingar@telenet.be
 
 Web Site(s)             : http://ingar.satgnu.net
+                          https://github.com/IngarKCT/map-vega
 
 Description             : Map for the open source game Unvanquished
                           http://www.unvanquished.net
@@ -20,8 +19,10 @@ Credits to              : ID-Software for Quake III Arena,
 
 =============================================================================
 
-	The map Vega Industries: Research Outpost 13 and related assets
-	are available under the	conditions of the Creative Commons License
+	The map Vega Industries: Research Outpost 13 and related 
+	assets are available under the conditions of 
+	the Creative Commons License BY-SA-3.0
+
 	http://creativecommons.org/licenses/by-sa/3.0
 
 =============================================================================
@@ -102,10 +103,11 @@ SKYBOX
 
 TEXTURES
 
-        The texture set for Unvanquished is a complete overhaul of the texture set
-	of the Tremulous map. They were created from pictures and edited with the GIMP.
-	The Vega Industries logos were made with Inkscape. Normal maps were
-	generated with Blender and the GIMP.
+        The iVega texture set for Unvanquished is a complete overhaul 
+	of the texture set mad for the Tremulous map. They were created
+	from pictures and edited with the GIMP. The Vega Industries logos
+	were made with Inkscape. Normal maps were generated with
+	Blender and the GIMP.
 
 	Contact me if you're interested in the original high-res images.
 	
@@ -166,13 +168,20 @@ STATISTICS
 THANKS
 
 	Thorn[mDc] for the models, testing and advice
+
 	gareth for the fire extinguisher model and support
+
 	StalKermit for support
 
 	Karvajalka for the awesome models
+
 	maci for hosting on satgnu
+	
 	Lava_Croft for testing and advice
+
 	#satgnu for support
+
+	illwieckz for crunching textures and navmap support
 
 	f0rqu3 for the model and testing
 
