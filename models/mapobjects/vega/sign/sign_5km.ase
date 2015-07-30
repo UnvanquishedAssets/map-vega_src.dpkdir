@@ -12,7 +12,7 @@
 *MATERIAL_LIST {
 	*MATERIAL_COUNT 3
 	*MATERIAL 0 {
-		*MATERIAL_NAME "textures/vega_custom/base03a"
+		*MATERIAL_NAME "textures/shared_vega/base03a"
 		*MATERIAL_CLASS "Standard"
 		*MATERIAL_AMBIENT 0.5882	0.5882	0.5882
 		*MATERIAL_DIFFUSE 0.5882	0.5882	0.5882
@@ -27,11 +27,11 @@
 		*MATERIAL_FALLOFF In
 		*MATERIAL_XP_TYPE Filter
 		*MAP_DIFFUSE {
-			*MAP_NAME "textures/vega_custom/base03a"
+			*MAP_NAME "textures/shared_vega/base03a"
 			*MAP_CLASS "Bitmap"
 			*MAP_SUBNO 1
 			*MAP_AMOUNT 1.0000
-			*BITMAP "textures/vega_custom/base03a.png"
+			*BITMAP "textures/shared_vega/base03a.png"
 			*MAP_TYPE Screen
 			*UVW_U_OFFSET 0.0000
 			*UVW_V_OFFSET 0.0000

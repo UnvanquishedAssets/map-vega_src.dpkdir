@@ -289,21 +289,21 @@ models/mapobjects/vega/pump/pump
 	}
 	// fake lightmap
 	{
-                map textures/vega_custom_src/base03a_diffuse
+                map textures/shared)vega_src/base03a_diffuse
 		blendfunc filter
 	}
 }
 
 models/mapobjects/vega/pump/pipe
 {
-	qer_editorimage textures/vega_custom_src/rust01_diffuse
+	qer_editorimage textures/shared)vega_src/rust01_diffuse
 	{
-		map textures/vega_custom_src/rust01_diffuse
+		map textures/shared)vega_src/rust01_diffuse
 		rgbGen lightingDiffuse
 	}
 	// fake lightmap
 	{
-                map textures/vega_custom_src/base03a_diffuse
+                map textures/shared)vega_src/base03a_diffuse
 		blendfunc filter
 	}
 	
