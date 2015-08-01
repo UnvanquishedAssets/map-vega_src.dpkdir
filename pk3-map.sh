@@ -45,9 +45,21 @@ cp -r textures/vega_custom_src release/map/textures
 echo "tex-common" > release/map/DEPS
 echo "tex-vega" >> release/map/DEPS
 
-# pk3
+# enter output directory
 cd release/map
 
+# encode audio with opus
+cd sound/vega
+
+for wavfile in *.wav; do 
+	opusenc "${wavfile}" `basename ${wavfile} .wav`.opus
+done
+
+rm *.wav
+
+cd ../..
+
+# pk3
 TIMESTAMP=`date +"%Y%d%d%H%M"`
 zip -r "../map-vega_t${TIMESTAMP}.pk3" *
 
