@@ -34,9 +34,9 @@
 // black
 textures/vega_custom/black
 {
-	qer_editorimage textures/vega_custom_src/black
+	qer_editorimage textures/vega_custom_src/black_p
 	
-	diffusemap textures/vega_custom_src/black
+	diffusemap textures/vega_custom_src/black_diffuse
 	
 	surfaceparm nomarks
 	surfaceparm nolightmap
@@ -45,9 +45,9 @@ textures/vega_custom/black
 // black (nonsolid)
 textures/vega_custom/black_nonsolid
 {
-	qer_editorimage textures/vega_custom_src/black
+	qer_editorimage textures/vega_custom_src/black_p
 	
-	diffusemap textures/vega_custom_src/black
+	diffusemap textures/vega_custom_src/black_diffuse
 	
 	surfaceparm nomarks
 	surfaceparm nolightmap
@@ -57,9 +57,9 @@ textures/vega_custom/black_nonsolid
 // white
 textures/vega_custom/white
 {
-        diffusemap textures/vega_custom_src/white
-        
-	qer_editorimage textures/vega_custom_src/white
+	qer_editorimage textures/vega_custom_src/white_p
+	
+	diffusemap textures/vega_custom_src/white_diffuse
 	
 	surfaceparm nomarks
 	surfaceparm nolightmap
@@ -69,10 +69,10 @@ textures/vega_custom/white
 // white (nonsolid)
 textures/vega_custom/white_nonsolid
 {
-        diffusemap textures/vega_custom_src/white
-        
-	qer_editorimage textures/vega_custom_src/white
+	qer_editorimage textures/vega_custom_src/white_p
 	
+        diffusemap textures/vega_custom_src/white_diffuse
+        	
 	surfaceparm nomarks
 	surfaceparm nolightmap
 }
@@ -80,9 +80,9 @@ textures/vega_custom/white_nonsolid
 // white (nonsolid, light)
 textures/vega_custom/white_nonsolid_150
 {
-        diffusemap textures/vega_custom_src/white
-        
-	qer_editorimage textures/vega_custom_src/white
+	qer_editorimage textures/vega_custom_src/white_p
+	
+        diffusemap textures/vega_custom_src/white_diffuse
 	
 	surfaceparm nomarks
 	surfaceparm nolightmap
@@ -95,7 +95,7 @@ textures/vega_custom/white_nonsolid_150
 
 textures/vega_custom/vega_banner
 {
-	qer_editorimage textures/vega_custom_src/vega_banner_blend
+	qer_editorimage textures/vega_custom_src/vega_banner_p
 
         surfaceparm nomarks
 	surfaceparm nonsolid
@@ -120,7 +120,7 @@ textures/vega_custom/vega_banner
 
 textures/vega_custom/vega_motto
 {
-	qer_editorimage textures/vega_custom_src/vega_motto_blend
+	qer_editorimage textures/vega_custom_src/vega_motto_p
 
         surfaceparm nomarks
 	surfaceparm nonsolid
@@ -149,7 +149,7 @@ textures/vega_custom/vega_motto
 
 textures/vega_custom/arrow_elevator
 {
-	qer_editorimage textures/vega_custom_src/arrow_elevator_blend
+	qer_editorimage textures/vega_custom_src/arrow_elevator_p
 
         surfaceparm nomarks
 	surfaceparm nonsolid
@@ -174,7 +174,7 @@ textures/vega_custom/arrow_elevator
 
 textures/vega_custom/arrow_stairs
 {
-	qer_editorimage textures/vega_custom_src/arrow_stairs_blend
+	qer_editorimage textures/vega_custom_src/arrow_stairs_p
 
         surfaceparm nomarks
 	surfaceparm nonsolid
@@ -202,7 +202,7 @@ textures/vega_custom/arrow_stairs
 
 textures/vega_custom/sign_gate1
 {
-	qer_editorimage textures/vega_custom_src/sign_gate1_blend
+	qer_editorimage textures/vega_custom_src/sign_gate1_p
 
         surfaceparm nomarks
 	surfaceparm nonsolid
@@ -227,7 +227,7 @@ textures/vega_custom/sign_gate1
 
 textures/vega_custom/sign_gate2
 {
-	qer_editorimage textures/vega_custom_src/sign_gate2_blend
+	qer_editorimage textures/vega_custom_src/sign_gate2_p
 
         surfaceparm nomarks
 	surfaceparm nonsolid
@@ -252,7 +252,7 @@ textures/vega_custom/sign_gate2
 
 textures/vega_custom/sign_hatch
 {
-	qer_editorimage textures/vega_custom_src/sign_hatch_blend
+	qer_editorimage textures/vega_custom_src/sign_hatch_p
 
         surfaceparm nomarks
 	surfaceparm nonsolid
@@ -277,7 +277,7 @@ textures/vega_custom/sign_hatch
 
 textures/vega_custom/sign_workshop
 {
-        qer_editorimage textures/vega_custom_src/sign_workshop_blend
+        qer_editorimage textures/vega_custom_src/sign_workshop_p
 
         surfaceparm nomarks
 	surfaceparm nonsolid
@@ -305,7 +305,7 @@ textures/vega_custom/sign_workshop
 
 textures/vega_custom/holo_gate1
 {
-	qer_editorimage textures/vega_custom_src/arrow_gate1_blend
+	qer_editorimage textures/vega_custom_src/arrow_gate1_p
 	qer_trans .7
 	
 	cull none
@@ -332,7 +332,7 @@ textures/vega_custom/holo_gate1
 
 textures/vega_custom/holo_gate2_broken
 {
-	qer_editorimage textures/vega_custom_src/arrow_gate2_distort_blend
+	qer_editorimage textures/vega_custom_src/arrow_gate2_p
 	qer_trans .7
 	
 	cull none
@@ -360,7 +360,7 @@ textures/vega_custom/holo_gate2_broken
 
 textures/vega_custom/holo_workshop_broken
 {
-	qer_editorimage textures/vega_custom_src/arrow_workshop_distort_blend
+	qer_editorimage textures/vega_custom_src/arrow_workshop_p
 	qer_trans .7
 	
 	cull none
@@ -392,7 +392,7 @@ textures/vega_custom/holo_workshop_broken
 
 textures/vega_custom/starchart01
 {
-        qer_editorimage textures/vega_custom_src/starchart01_diffuse
+        qer_editorimage textures/vega_custom_src/starchart01_p
         
         q3map_surfacelight 150
         
@@ -405,7 +405,7 @@ textures/vega_custom/starchart01
 
 textures/vega_custom/starchart02
 {
-        qer_editorimage textures/vega_custom_src/starchart02_diffuse
+        qer_editorimage textures/vega_custom_src/starchart02_p
     
 	q3map_surfacelight 150
 	
@@ -422,7 +422,7 @@ textures/vega_custom/starchart02
 
 textures/vega_custom/roadstrip
 {
-	qer_editorimage textures/vega_custom_src/roadstrip_blend
+	qer_editorimage textures/vega_custom_src/roadstrip_p
 
         surfaceparm nomarks
 	surfaceparm nonsolid
@@ -447,7 +447,7 @@ textures/vega_custom/roadstrip
 // wheeltracks
 textures/vega_custom/wheeltracks
 {
-	qer_editorimage textures/vega_custom_src/wheeltracks_qer
+	qer_editorimage textures/vega_custom_src/wheeltracks_p
 	
 	surfaceparm nomarks
 	surfaceparm nonsolid
@@ -493,7 +493,7 @@ textures/vega_custom/squarelight01_red_150
 // holo projector beam
 textures/vega_custom/holo_projector
 {
-	qer_editorimage textures/vega_custom_src/holo_projector_qer
+	qer_editorimage textures/vega_custom_src/holo_projector_p
 	qer_trans .7
 	
 	q3map_surfacelight 25
