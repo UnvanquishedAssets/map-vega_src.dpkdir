@@ -1,27 +1,26 @@
-July 26, 2015
-=============================================================================
 
-Title                   : Vega Industries: Research Outpost 13 (beta 2)
+    Title
+    
+	Vega Industries: Research Outpost 13
 
-Author                  : Stijn "Ingar" Buys
+    Author
+    
+	Stijn "Ingar" Buys <ingar@osirion.org>
 
-Email Address           : ingar@telenet.be
+    Source
+    
+	https://github.com/IngarKCT/map-vega
 
-Web Site(s)             : http://ingar.satgnu.net
-                          https://github.com/IngarKCT/map-vega
-
-Description             : Map for the open source game Unvanquished
-                          http://www.unvanquished.net
-
-Credits to              : ID-Software for Quake III Arena,
-                          darklegion for Tremulous,
-                          the Unvanquished Development Team
-
-=============================================================================
+    Description
+    
+	Map for the Unvanquished game project
+        http://www.unvanquished.net
+        
+    License
 
 	The map Vega Industries: Research Outpost 13 and related 
 	assets are available under the conditions of 
-	the Creative Commons License BY-SA-3.0
+	the CREATIVE COMMONS ATTRIBUTION-SHARE ALIKE 3.0 LICENSE
 
 	http://creativecommons.org/licenses/by-sa/3.0
 
