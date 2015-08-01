@@ -48,20 +48,91 @@ echo "tex-vega" >> release/map/DEPS
 # enter output directory
 cd release/map
 
-# encode audio with opus
+# compress audio
 cd sound/vega
 
-for wavfile in *.wav; do 
-	opusenc "${wavfile}" `basename ${wavfile} .wav`.opus
-done
+OPUSENC=`which opusenc`
+if [ ! -z "${OPUSENC}" ]
+then
 
-rm *.wav
+	for file in *.wav
+	do
+		if [ -f ${file} ]
+		then
+			echo "Encoding ${file%.wav}.opus ..."
+			${OPUSENC} ${file} ${file%.wav}.opus && rm ${file}
+		fi
+	done
+else
+	echo "WARNING opusenc not found"
+fi
+
+cd ../..
+
+# compress textures
+cd textures/vega_custom_src
+
+
+CONVERT=`which convert`
+if [ ! -z "${CONVERT}" ]; then
+
+	# convert preview textures to JPEG
+	for file in *_p.png; do
+		if [ -f ${file} ]; then
+			echo "Converting ${file%.png}.jpg ..."
+			convert -quality 80 ${file} ${file%.png}.jpg && rm ${file}
+		fi
+	done
+else
+	echo "WARNING convert not found"
+fi
+
+CRUNCH=`which crunch`
+if [ ! -z "${CRUNCH}" ]
+then
+
+	# convert normal maps
+	for file in *_normal.png
+	do
+		if [ -f ${file} ]
+		then
+			echo "Crunching ${file%.png}.crn ..."
+			convert -alpha deactivate ${file} ${file%.png}.tga
+			${CRUNCH} -quality 255 -dxn -renormalize ${file%.png}.tga -out ${file%.png}.crn && rm ${file}
+			rm ${file%.png}.tga
+		fi
+	done
+		
+	# convert blend maps
+	for file in *_blend.png
+	do
+		if [ -f ${file} ]
+		then
+			echo "Crunching ${file%.png}.crn ..."
+			${CRUNCH} -quality 255 ${file%} -out ${file%.png}.crn && rm ${file}
+		fi
+	done
+	
+	# convert other image maps
+	for file in *_diffuse.png *_glow.png *_specular.png
+	do
+		if [ -f ${file} ]
+		then
+			echo "Crunching ${file%.png}.crn ..."
+			convert -alpha deactivate ${file} ${file%.png}.tga
+			${CRUNCH} -quality 255 ${file%.png}.tga -out ${file%.png}.crn && rm ${file}
+			rm ${file%.png}.tga
+		fi
+	done
+else
+	echo "WARNING crunch not found"
+fi
 
 cd ../..
 
 # pk3
 TIMESTAMP=`date +"%Y%d%d%H%M"`
-zip -r "../map-vega_t${TIMESTAMP}.pk3" *
+zip -qr "../map-vega_t${TIMESTAMP}.pk3" *
 
 cd ../..
 
