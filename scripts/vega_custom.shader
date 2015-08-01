@@ -469,7 +469,7 @@ textures/vega_custom/wheeltracks
 
 textures/vega_custom/squarelight01_red_150
 {
-	qer_editorimage textures/shared_vega_src/squarelight01_red_qer
+	qer_editorimage textures/shared_vega_src/squarelight01_red_p
 	
 	// red
 	q3map_lightRGB 1.0 0.0 0.0
