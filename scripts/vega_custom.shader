@@ -332,7 +332,7 @@ textures/vega_custom/holo_gate1
 
 textures/vega_custom/holo_gate2_broken
 {
-	qer_editorimage textures/vega_custom_src/arrow_gate2_distort
+	qer_editorimage textures/vega_custom_src/arrow_gate2_distort_blend
 	qer_trans .7
 	
 	cull none
@@ -351,7 +351,7 @@ textures/vega_custom/holo_gate2_broken
 	
 	// arrow sign
         {
-                animmap 8 textures/vega_custom_src/arrow_gate2_blend textures/vega_custom_src/arrow_gate2_blend textures/vega_custom_src/arrow_gate2_blend textures/vega_custom_src/arrow_gate2_blend textures/vega_custom_src/arrow_gate2_blend textures/vega_custom_src/arrow_gate2_blend textures/vega_custom_src/arrow_gate2_blend textures/vega_custom_src/arrow_gate2_distort
+                animmap 8 textures/vega_custom_src/arrow_gate2_blend textures/vega_custom_src/arrow_gate2_blend textures/vega_custom_src/arrow_gate2_blend textures/vega_custom_src/arrow_gate2_blend textures/vega_custom_src/arrow_gate2_blend textures/vega_custom_src/arrow_gate2_blend textures/vega_custom_src/arrow_gate2_blend textures/vega_custom_src/arrow_gate2_distort_blend
                 
                 rgbGen identity
 		blendfunc blend
@@ -360,7 +360,7 @@ textures/vega_custom/holo_gate2_broken
 
 textures/vega_custom/holo_workshop_broken
 {
-	qer_editorimage textures/vega_custom_src/arrow_workshop_distort
+	qer_editorimage textures/vega_custom_src/arrow_workshop_distort_blend
 	qer_trans .7
 	
 	cull none
@@ -379,7 +379,7 @@ textures/vega_custom/holo_workshop_broken
 	
 	// arrow sign
         {
-                animmap 8 textures/vega_custom_src/arrow_workshop_blend textures/vega_custom_src/arrow_workshop_blend textures/vega_custom_src/arrow_workshop_blend textures/vega_custom_src/arrow_workshop_blend textures/vega_custom_src/arrow_workshop_blend textures/vega_custom_src/arrow_workshop_blend textures/vega_custom_src/arrow_workshop_blend textures/vega_custom_src/arrow_workshop_distort
+                animmap 8 textures/vega_custom_src/arrow_workshop_blend textures/vega_custom_src/arrow_workshop_blend textures/vega_custom_src/arrow_workshop_blend textures/vega_custom_src/arrow_workshop_blend textures/vega_custom_src/arrow_workshop_blend textures/vega_custom_src/arrow_workshop_blend textures/vega_custom_src/arrow_workshop_blend textures/vega_custom_src/arrow_workshop_distort_blend
                 
                 rgbGen identity
 		blendfunc blend
@@ -422,7 +422,7 @@ textures/vega_custom/starchart02
 
 textures/vega_custom/roadstrip
 {
-	qer_editorimage textures/vega_custom_src/roadstrip_diffuse
+	qer_editorimage textures/vega_custom_src/roadstrip_blend
 
         surfaceparm nomarks
 	surfaceparm nonsolid
@@ -431,7 +431,7 @@ textures/vega_custom/roadstrip
 	sort decal
         noShadows
 	{
-		map textures/vega_custom_src/roadstrip_diffuse
+		map textures/vega_custom_src/roadstrip_blend
 		alphafunc GE128
 		depthwrite
 		rgbGen identity
@@ -519,7 +519,7 @@ textures/vega_custom/holo_projector
 // water bubble
 textures/vega_custom/water_bubble
 {
-	qer_editorimage textures/vega_custom_src/bubble
+	qer_editorimage textures/vega_custom_src/bubble_blend
         cull none
         // from http://www.quake3world.com/forum/viewtopic.php?f=10&t=11941&view=next
         //
@@ -532,7 +532,7 @@ textures/vega_custom/water_bubble
 	// a batch. I don't know if this actually works
         entityMergable
         {
-                map textures/vega_custom_src/bubble
+                map textures/vega_custom_src/bubble_blend
                 blendfunc blend
         }
 }
@@ -541,11 +541,11 @@ textures/vega_custom/water_bubble
 // smoke
 textures/vega_custom/smoke
 {
-	qer_editorimage textures/vega_custom_src/smoke
+	qer_editorimage textures/vega_custom_src/smoke_blend
         cull none
         entityMergable
         {
-                map textures/vega_custom_src/smoke
+                map textures/vega_custom_src/smoke_blend
                 //blendfunc blend
                 blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
                 //rgbGen          vertex
