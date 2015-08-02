@@ -202,6 +202,15 @@ THANKS
 
 HISTORY
 
+	2015-08-02
+		beta 3
+		official release for Unvanquished-0.42.0
+		
+		split package into the a texture pack and the map itself
+		updated Mixer Hall
+		updated Observatory
+		improved ventilation shafts
+		
 	2015-07-26
 		beta 2
 		first official Unvanquished release

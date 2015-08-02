@@ -1,11 +1,14 @@
 #!/bin/sh
-
+#
 # simple script to compile Unvanquished .map files with q3map2
 # ingar@osirion.org
-# Last changes: 2015-08-01
+# Last changes: 2015-08-02
 
 # For more information check
 # http://en.wikibooks.org/wiki/Q3Map2
+
+# Note: this script requires q3map2 with bot navMesh support
+# https://gitlab.com/illwieckz/netradiant/commits/navmesh
 
 # CONFIGURATION -----------------------
 
@@ -40,7 +43,7 @@ if [ ! -f "${map}" ]; then
 	exit 1
 fi
 
-q3map="${q3map2bin} -v -game tremulous -fs_homebase "${homedir}" -fs_basepath "${gamedir}" -fs_game main"
+q3map="${q3map2bin} -v -game unv -fs_homebase "${homedir}" -fs_basepath "${gamedir}" -fs_game main"
 
 if [ "${final}" = "true" ]; then
 	echo "------- COMPILING WITH FINAL SETTINGS ----"
@@ -84,6 +87,12 @@ ${q3map} -vis -saveprt "${map}"
 echo "------- LIGHT ----------------------------"
 # -scale 1.1
 ${q3map} -light ${lightoptions} "${map}"
+
+echo "------- MINIMAP --------------------------"
+${q3map} -minimap -size 512 -sharpen 1 -border 0 ${map}
+
+echo "------- BOT NAVIGATION -------------------"
+${q3map} -nav ${map%.map}.bsp
 
 echo "------- SUMMARY --------------------------"
 mapname=`basename "${map}"`
