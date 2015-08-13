@@ -318,3 +318,22 @@ models/mapobjects/vega/pump/needle
 		blendfunc blend
         }
 }
+
+// . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+// cannister model and textures by Ingar
+
+models/mapobjects/vega/cannister/cannister01
+{
+	qer_editorimage models/mapobjects/vega/cannister/cannister01
+	
+	diffusemap models/mapobjects/vega/cannister/cannister01
+}
+
+models/mapobjects/vega/cannister/cannister01_nocull
+{
+	qer_editorimage models/mapobjects/vega/cannister/cannister01
+	
+	cull none
+	
+	diffusemap models/mapobjects/vega/cannister/cannister01
+}
