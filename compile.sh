@@ -48,14 +48,11 @@ q3map="${q3map2bin} -v -game unv -fs_homebase "${homedir}" -fs_basepath "${gamed
 if [ "${final}" = "true" ]; then
 	echo "------- COMPILING WITH FINAL SETTINGS ----"
 	# options for final compile
-	bspoptions="-nosRGB -samplesize 8"
+	bspoptions="-samplesize 8"
 	visoptions="-hint"
 	#lightoptions="-fast -shade -dirty -patchshadows -samples 3 -bounce 8 -bouncegrid -cpma"
 	
-	lightoptions="-nocollapse -nosRGB -deluxe -fast -shade -dirty -patchshadows -samples 3 -samplesize 8 -bounce 8 -bouncegrid -lightmapsize 1024 -external"
-	# unused light options
-	# -randomsamples -lightmapsearchpower 3
-
+	lightoptions="-nocollapse -deluxe -fast -shade -dirty -patchshadows -randomsamples -samples 3 -samplesize 8 -bounce 8 -bouncegrid -lightmapsize 1024 -external"
 else
 	echo "------- COMPILING WITH TEST SETTINGS ----"
 	# options for test compile
