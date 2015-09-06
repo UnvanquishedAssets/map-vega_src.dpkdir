@@ -102,7 +102,7 @@ SKYBOX
 
 TEXTURES
 
-        The iVega texture set for Unvanquished is a complete overhaul 
+        The Vega texture set for Unvanquished is a complete overhaul 
 	of the texture set mad for the Tremulous map. They were created
 	from pictures and edited with the GIMP. The Vega Industries logos
 	were made with Inkscape. Normal maps were generated with
@@ -130,6 +130,8 @@ MODELS
 	textures by Thorn & Ingar.
 
 	The container and plant models and textures were made by Ingar.
+	
+	The cardboard box models and textures were made by Ingar.
 
 	The vehicle model was made by Ingar, the texture was generously
 	donated by TraK.
@@ -157,12 +159,12 @@ SOUNDS
 
 STATISTICS
 
-	q3map2 -leaktest -samplesize 8 -meta
+	q3map2 -leaktest -samplesize 4 -meta
 	q3map2 -vis -saveprt -hint
-	q3map2 -nocollapse -nosRGB -deluxe -fast -shade -dirty -patchshadows -samples 3 -samplesize 8 -bounce 8 -bouncegrid -lightmapsize 1024 -external
+	q3map2 -nocollapse -deluxe -fast -shade -dirty -patchshadows -samples 3 -samplesize 4 -bounce 8 -bouncegrid -lightmapsize 1024 -external
 
-	Compile time: 21 minutes (Intel i5-2500K)
-	17931 brushes, 1788 patches, 107 model instances, 375 entities total
+	Compile time: 52 minutes (Intel i7-6700K)
+	17860 brushes, 1810 patches, 135 model instances, 401 entities total
 
 THANKS
 
@@ -202,6 +204,16 @@ THANKS
 
 HISTORY
 
+	2015-09-06
+		beta 4
+		official release for Unvanquished-0.43.0
+		
+		cleaned up texture filenames to be consistent with Unvanquished naming
+		added cardboard boxes
+		added gas cannisters
+		added metal table model
+		removed Workshop doors
+		
 	2015-08-02
 		beta 3
 		official release for Unvanquished-0.42.0
