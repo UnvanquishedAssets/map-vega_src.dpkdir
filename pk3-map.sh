@@ -122,7 +122,7 @@ for file in *_p.png; do
 done
 
 # crunch normal map textures
-for file in *_normal.png
+for file in *_n.png
 do
 	if [ -f ${file} ]
 	then
@@ -134,7 +134,7 @@ do
 done
 	
 # crunch blend map textures
-for file in *_blend.png
+for file in *_b.png
 do
 	if [ -f ${file} ]
 	then
@@ -144,7 +144,7 @@ do
 done
 
 # crunch other textures
-for file in *_diffuse.png *_glow.png *_specular.png
+for file in *_d.png *_a.png *_s.png
 do
 	if [ -f ${file} ]
 	then
