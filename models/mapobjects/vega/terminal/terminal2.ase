@@ -12,7 +12,7 @@
 *MATERIAL_LIST {
 	*MATERIAL_COUNT 2
 	*MATERIAL 0 {
-		*MATERIAL_NAME "models/mapobjects/vega/terminal/terminal2.tga"
+		*MATERIAL_NAME "models/mapobjects/vega/terminal/terminal2"
 		*MATERIAL_CLASS "Standard"
 		*MATERIAL_AMBIENT 0.5880	0.5880	0.5880
 		*MATERIAL_DIFFUSE 0.5880	0.5880	0.5880
@@ -31,7 +31,7 @@
 			*MAP_CLASS "Bitmap"
 			*MAP_SUBNO 1
 			*MAP_AMOUNT 1.0000
-			*BITMAP "models/mapobjects/vega/terminal/terminal2.tga"
+			*BITMAP "models/mapobjects/vega/terminal/terminal2"
 			*MAP_TYPE Screen
 			*UVW_U_OFFSET 0.0000
 			*UVW_V_OFFSET 0.0000

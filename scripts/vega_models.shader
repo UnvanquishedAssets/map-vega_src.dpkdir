@@ -184,97 +184,90 @@ models/mapobjects/vega/console/console_screens
 // rectangular ceiling light
 models/mapobjects/vega/ceilinglight/ceilinglight1
 {
-	qer_editorimage models/mapobjects/vega/ceilinglight/ceilinglight1
-	{
-		map models/mapobjects/vega/ceilinglight/ceilinglight1_base
-		rgbGen identity
-	}
-	{
-		map $lightmap 
-		blendfunc filter
-		rgbGen identity
-	}
-	{
-		map models/mapobjects/vega/ceilinglight/ceilinglight1_glow
-		blendfunc add
-	}
+	qer_editorimage models/mapobjects/vega/ceilinglight/ceilinglight1_p
+	
+	diffuseMap 	models/mapobjects/vega/ceilinglight/ceilinglight1_d
+	normalMap	models/mapobjects/vega/ceilinglight/ceilinglight1_n
+	specularMap	models/mapobjects/vega/ceilinglight/ceilinglight1_s
+	glowMap		models/mapobjects/vega/ceilinglight/ceilinglight1_a
 }
 
 // tubular ceiling light
 models/mapobjects/vega/ceilinglight/ceilinglight2
 {
-	qer_editorimage models/mapobjects/vega/ceilinglight/ceilinglight2
-	{
-		map models/mapobjects/vega/ceilinglight/ceilinglight2_base
-		rgbGen identity
-	}
-	{
-		map $lightmap 
-		blendfunc filter
-		rgbGen identity
-	}
-	{
-		map models/mapobjects/vega/ceilinglight/ceilinglight2_glow
-		blendfunc add
-	}
+	qer_editorimage models/mapobjects/vega/ceilinglight/ceilinglight2_p
+	
+	diffuseMap 	models/mapobjects/vega/ceilinglight/ceilinglight2_d
+	normalMap	models/mapobjects/vega/ceilinglight/ceilinglight2_n
+	specularMap	models/mapobjects/vega/ceilinglight/ceilinglight2_s
+	glowMap		models/mapobjects/vega/ceilinglight/ceilinglight2_a
 }
 
 // tubular ceiling light (brown)
 models/mapobjects/vega/ceilinglight/ceilinglight2a
 {
-	qer_editorimage models/mapobjects/vega/ceilinglight/ceilinglight2a
-	{
-		map models/mapobjects/vega/ceilinglight/ceilinglight2_base
-		rgbGen identity
-	}
-	{
-		map $lightmap 
-		blendfunc filter
-		rgbGen identity
-	}
-	{
-		map models/mapobjects/vega/ceilinglight/ceilinglight2a_glow
-		blendfunc add
-	}
+	qer_editorimage models/mapobjects/vega/ceilinglight/ceilinglight2a_p
+	
+	diffuseMap 	models/mapobjects/vega/ceilinglight/ceilinglight2_d
+	normalMap	models/mapobjects/vega/ceilinglight/ceilinglight2_n
+	specularMap	models/mapobjects/vega/ceilinglight/ceilinglight2_s
+	glowMap		models/mapobjects/vega/ceilinglight/ceilinglight2a_a
 }
 
 // . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-// terminals by Karvajalka
+// terminal models and textures by Karvajalka, display textures by Ingar
 
 models/mapobjects/vega/terminal/terminal1
 {
-	qer_editorimage models/mapobjects/vega/terminal/terminal1
-	{
-		map models/mapobjects/vega/terminal/terminal1_base
-		rgbGen identity
-	}
-	{
-		map $lightmap 
-		blendfunc filter
-		rgbGen identity
-	}
-	{
-		map models/mapobjects/vega/terminal/terminal1_display
-		blendfunc add
-	}
+	qer_editorimage models/mapobjects/vega/terminal/terminal1_p
+	
+	diffuseMap 	models/mapobjects/vega/terminal/terminal1_d
+	normalMap	models/mapobjects/vega/terminal/terminal1_n
+	specularMap	models/mapobjects/vega/terminal/terminal1_s
+	glowMap 	models/mapobjects/vega/terminal/terminal1_a
 }
 
 models/mapobjects/vega/terminal/terminal2
 {
-	qer_editorimage models/mapobjects/vega/terminal/terminal2
-	{
-		map models/mapobjects/vega/terminal/terminal2_base
-		rgbGen identity
-	}
-	{
-		map $lightmap 
-		blendfunc filter
-		rgbGen identity
-	}
-	{
-		map models/mapobjects/vega/terminal/terminal2_display
-		blendfunc add
-	}
+	qer_editorimage models/mapobjects/vega/terminal/terminal2_p
+	
+	diffuseMap 	models/mapobjects/vega/terminal/terminal2_d
+	normalMap	models/mapobjects/vega/terminal/terminal2_n
+	specularMap	models/mapobjects/vega/terminal/terminal2_s
+	glowMap 	models/mapobjects/vega/terminal/terminal2_a
+}
+
+// . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+// cannister model and textures by Ingar
+
+models/mapobjects/vega/cannister/cannister01
+{
+	qer_editorimage models/mapobjects/vega/cannister/cannister01
+	
+	diffusemap models/mapobjects/vega/cannister/cannister01
+}
+
+models/mapobjects/vega/cannister/cannister01_nocull
+{
+	qer_editorimage models/mapobjects/vega/cannister/cannister01
+	
+	cull none
+	
+	diffusemap models/mapobjects/vega/cannister/cannister01
+}
+
+// . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+// cardboard box model and textures by Ingar
+
+models/mapobjects/vega/box/box02
+{
+	qer_editorimage models/mapobjects/vega/box/box01
+	
+	// this box is open, the inside and thus the backside of the faces will be visible
+	cull none
+	polygonOffset
+	
+	diffuseMap models/mapobjects/vega/box/box01
 }
 
 // . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
@@ -317,23 +310,4 @@ models/mapobjects/vega/pump/needle
                 map models/mapobjects/vega/pump/needle
 		blendfunc blend
         }
-}
-
-// . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-// cannister model and textures by Ingar
-
-models/mapobjects/vega/cannister/cannister01
-{
-	qer_editorimage models/mapobjects/vega/cannister/cannister01
-	
-	diffusemap models/mapobjects/vega/cannister/cannister01
-}
-
-models/mapobjects/vega/cannister/cannister01_nocull
-{
-	qer_editorimage models/mapobjects/vega/cannister/cannister01
-	
-	cull none
-	
-	diffusemap models/mapobjects/vega/cannister/cannister01
 }
