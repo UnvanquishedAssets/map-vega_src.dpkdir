@@ -386,6 +386,32 @@ textures/vega_custom/holo_workshop_broken
         }
 }
 
+textures/vega_custom/holo_observatory
+{
+	qer_editorimage textures/vega_custom_src/arrow_observatory_p
+	qer_trans .7
+	
+	cull none
+	
+	q3map_surfacelight 150
+	
+	// blue light #00baff
+        q3map_lightRGB 0.0 0.7924 1.0
+        
+        // scrolling background
+	{
+		map textures/vega_custom_src/arrow_holo_b
+		tcmod scroll 0.0 0.25
+		blendFunc filter
+	}
+	
+	// arrow sign
+        {
+                map textures/vega_custom_src/arrow_observatory_b
+                rgbGen identity
+		blendFunc blend
+        }
+}
 
 // . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 // starcharts
