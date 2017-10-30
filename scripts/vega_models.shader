@@ -185,7 +185,7 @@ models/mapobjects/vega/console/console_screens
 models/mapobjects/vega/ceilinglight/ceilinglight1
 {
 	qer_editorimage models/mapobjects/vega/ceilinglight/ceilinglight1_p
-	
+
 	diffuseMap 	models/mapobjects/vega/ceilinglight/ceilinglight1_d
 	normalMap	models/mapobjects/vega/ceilinglight/ceilinglight1_n
 	specularMap	models/mapobjects/vega/ceilinglight/ceilinglight1_s
@@ -196,7 +196,7 @@ models/mapobjects/vega/ceilinglight/ceilinglight1
 models/mapobjects/vega/ceilinglight/ceilinglight2
 {
 	qer_editorimage models/mapobjects/vega/ceilinglight/ceilinglight2_p
-	
+
 	diffuseMap 	models/mapobjects/vega/ceilinglight/ceilinglight2_d
 	normalMap	models/mapobjects/vega/ceilinglight/ceilinglight2_n
 	specularMap	models/mapobjects/vega/ceilinglight/ceilinglight2_s
@@ -207,7 +207,7 @@ models/mapobjects/vega/ceilinglight/ceilinglight2
 models/mapobjects/vega/ceilinglight/ceilinglight2a
 {
 	qer_editorimage models/mapobjects/vega/ceilinglight/ceilinglight2a_p
-	
+
 	diffuseMap 	models/mapobjects/vega/ceilinglight/ceilinglight2_d
 	normalMap	models/mapobjects/vega/ceilinglight/ceilinglight2_n
 	specularMap	models/mapobjects/vega/ceilinglight/ceilinglight2_s
@@ -220,7 +220,7 @@ models/mapobjects/vega/ceilinglight/ceilinglight2a
 models/mapobjects/vega/terminal/terminal1
 {
 	qer_editorimage models/mapobjects/vega/terminal/terminal1_p
-	
+
 	diffuseMap 	models/mapobjects/vega/terminal/terminal1_d
 	normalMap	models/mapobjects/vega/terminal/terminal1_n
 	specularMap	models/mapobjects/vega/terminal/terminal1_s
@@ -230,7 +230,7 @@ models/mapobjects/vega/terminal/terminal1
 models/mapobjects/vega/terminal/terminal2
 {
 	qer_editorimage models/mapobjects/vega/terminal/terminal2_p
-	
+
 	diffuseMap 	models/mapobjects/vega/terminal/terminal2_d
 	normalMap	models/mapobjects/vega/terminal/terminal2_n
 	specularMap	models/mapobjects/vega/terminal/terminal2_s
@@ -243,16 +243,16 @@ models/mapobjects/vega/terminal/terminal2
 models/mapobjects/vega/cannister/cannister01
 {
 	qer_editorimage models/mapobjects/vega/cannister/cannister01
-	
+
 	diffusemap models/mapobjects/vega/cannister/cannister01
 }
 
 models/mapobjects/vega/cannister/cannister01_nocull
 {
 	qer_editorimage models/mapobjects/vega/cannister/cannister01
-	
+
 	cull none
-	
+
 	diffusemap models/mapobjects/vega/cannister/cannister01
 }
 
@@ -262,11 +262,11 @@ models/mapobjects/vega/cannister/cannister01_nocull
 models/mapobjects/vega/box/box02
 {
 	qer_editorimage models/mapobjects/vega/box/box01
-	
+
 	// this box is open, the inside and thus the backside of the faces will be visible
 	cull none
 	polygonOffset
-	
+
 	diffuseMap models/mapobjects/vega/box/box01
 }
 
@@ -282,7 +282,7 @@ models/mapobjects/vega/pump/pump
 	}
 	// fake lightmap
 	{
-                map textures/shared_vega_src/base03a_d
+		map textures/shared_vega_src/base03a_d
 		blendfunc filter
 	}
 }
@@ -296,10 +296,10 @@ models/mapobjects/vega/pump/pipe
 	}
 	// fake lightmap
 	{
-                map textures/shared_vega_src/base03a_d
+		map textures/shared_vega_src/base03a_d
 		blendfunc filter
 	}
-	
+
 }
 
 models/mapobjects/vega/pump/needle
@@ -307,7 +307,7 @@ models/mapobjects/vega/pump/needle
 	qer_editorimage models/mapobjects/vega/pump/needle
 	polygonOffset
         {
-                map models/mapobjects/vega/pump/needle
+		map models/mapobjects/vega/pump/needle
 		blendfunc blend
         }
 }
