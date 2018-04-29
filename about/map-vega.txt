@@ -102,7 +102,7 @@ SKYBOX
 
 TEXTURES
 
-        The Vega texture set for Unvanquished is a complete overhaul 
+	The Vega texture set for Unvanquished is a complete overhaul 
 	of the texture set mad for the Tremulous map. They were created
 	from pictures and edited with the GIMP. The Vega Industries logos
 	were made with Inkscape. Normal maps were generated with
