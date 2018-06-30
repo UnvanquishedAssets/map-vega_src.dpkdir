@@ -7,7 +7,7 @@ Vega Industries: Research Outpost 13
 About
 -----
 
-_Vega Industries: Research Outpost 13_ is a map featuring a futuristic research station base
+_Vega Industries: Research Outpost 13_ is a map featuring a futuristic research station base.
 
 This map is a work in progress by Stijn “Ingar” Buys for the [Unvanquished](https://unvanquished.net) game project. 
 
