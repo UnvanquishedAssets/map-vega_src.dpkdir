@@ -184,7 +184,7 @@ models/mapobjects/vega/console/console_screens
 // rectangular ceiling light
 models/mapobjects/vega/ceilinglight/ceilinglight1
 {
-	qer_editorimage models/mapobjects/vega/ceilinglight/ceilinglight1_p
+	qer_editorImage models/mapobjects/vega/ceilinglight/ceilinglight1_p
 
 	diffuseMap 	models/mapobjects/vega/ceilinglight/ceilinglight1_d
 	normalMap	models/mapobjects/vega/ceilinglight/ceilinglight1_n
@@ -195,7 +195,7 @@ models/mapobjects/vega/ceilinglight/ceilinglight1
 // tubular ceiling light
 models/mapobjects/vega/ceilinglight/ceilinglight2
 {
-	qer_editorimage models/mapobjects/vega/ceilinglight/ceilinglight2_p
+	qer_editorImage models/mapobjects/vega/ceilinglight/ceilinglight2_p
 
 	diffuseMap 	models/mapobjects/vega/ceilinglight/ceilinglight2_d
 	normalMap	models/mapobjects/vega/ceilinglight/ceilinglight2_n
@@ -206,7 +206,7 @@ models/mapobjects/vega/ceilinglight/ceilinglight2
 // tubular ceiling light (brown)
 models/mapobjects/vega/ceilinglight/ceilinglight2a
 {
-	qer_editorimage models/mapobjects/vega/ceilinglight/ceilinglight2a_p
+	qer_editorImage models/mapobjects/vega/ceilinglight/ceilinglight2a_p
 
 	diffuseMap 	models/mapobjects/vega/ceilinglight/ceilinglight2_d
 	normalMap	models/mapobjects/vega/ceilinglight/ceilinglight2_n
@@ -219,7 +219,7 @@ models/mapobjects/vega/ceilinglight/ceilinglight2a
 
 models/mapobjects/vega/terminal/terminal1
 {
-	qer_editorimage models/mapobjects/vega/terminal/terminal1_p
+	qer_editorImage models/mapobjects/vega/terminal/terminal1_p
 
 	diffuseMap 	models/mapobjects/vega/terminal/terminal1_d
 	normalMap	models/mapobjects/vega/terminal/terminal1_n
@@ -229,7 +229,7 @@ models/mapobjects/vega/terminal/terminal1
 
 models/mapobjects/vega/terminal/terminal2
 {
-	qer_editorimage models/mapobjects/vega/terminal/terminal2_p
+	qer_editorImage models/mapobjects/vega/terminal/terminal2_p
 
 	diffuseMap 	models/mapobjects/vega/terminal/terminal2_d
 	normalMap	models/mapobjects/vega/terminal/terminal2_n
@@ -242,18 +242,18 @@ models/mapobjects/vega/terminal/terminal2
 
 models/mapobjects/vega/cannister/cannister01
 {
-	qer_editorimage models/mapobjects/vega/cannister/cannister01
+	qer_editorImage models/mapobjects/vega/cannister/cannister01
 
-	diffusemap models/mapobjects/vega/cannister/cannister01
+	diffuseMap models/mapobjects/vega/cannister/cannister01
 }
 
 models/mapobjects/vega/cannister/cannister01_nocull
 {
-	qer_editorimage models/mapobjects/vega/cannister/cannister01
+	qer_editorImage models/mapobjects/vega/cannister/cannister01
 
 	cull none
 
-	diffusemap models/mapobjects/vega/cannister/cannister01
+	diffuseMap models/mapobjects/vega/cannister/cannister01
 }
 
 // . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
@@ -261,7 +261,7 @@ models/mapobjects/vega/cannister/cannister01_nocull
 
 models/mapobjects/vega/box/box02
 {
-	qer_editorimage models/mapobjects/vega/box/box01
+	qer_editorImage models/mapobjects/vega/box/box01
 
 	// this box is open, the inside and thus the backside of the faces will be visible
 	cull none
@@ -275,7 +275,7 @@ models/mapobjects/vega/box/box02
 
 models/mapobjects/vega/pump/pump
 {
-	qer_editorimage models/mapobjects/vega/pump/pump
+	qer_editorImage models/mapobjects/vega/pump/pump
 	{
 		map models/mapobjects/vega/pump/pump
 		rgbGen lightingDiffuse
@@ -289,7 +289,7 @@ models/mapobjects/vega/pump/pump
 
 models/mapobjects/vega/pump/pipe
 {
-	qer_editorimage textures/shared_vega_src/rust01_d
+	qer_editorImage textures/shared_vega_src/rust01_d
 	{
 		map textures/shared_vega_src/rust01_d
 		rgbGen lightingDiffuse
@@ -304,7 +304,7 @@ models/mapobjects/vega/pump/pipe
 
 models/mapobjects/vega/pump/needle
 {
-	qer_editorimage models/mapobjects/vega/pump/needle
+	qer_editorImage models/mapobjects/vega/pump/needle
 	polygonOffset
         {
 		map models/mapobjects/vega/pump/needle
