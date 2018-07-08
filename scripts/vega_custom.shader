@@ -57,7 +57,7 @@ textures/vega_custom/black_nonsolid
 // white
 textures/vega_custom/white
 {
-	qer_editorImage textures/vega_custom_src/white_p
+	qer_editorImage textures/vega_custom_src/white_d
 
 	diffuseMap textures/vega_custom_src/white_d
 
@@ -69,7 +69,7 @@ textures/vega_custom/white
 // white (nonsolid)
 textures/vega_custom/white_nonsolid
 {
-	qer_editorImage textures/vega_custom_src/white_p
+	qer_editorImage textures/vega_custom_src/white_d
 
 	diffuseMap textures/vega_custom_src/white_d
 
@@ -80,7 +80,7 @@ textures/vega_custom/white_nonsolid
 // white (nonsolid, light)
 textures/vega_custom/white_nonsolid_150
 {
-	qer_editorImage textures/vega_custom_src/white_p
+	qer_editorImage textures/vega_custom_src/white_d
 
 	diffuseMap textures/vega_custom_src/white_d
 
