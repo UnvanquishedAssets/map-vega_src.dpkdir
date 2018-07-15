@@ -34,9 +34,9 @@
 // black
 textures/vega_custom/black
 {
-	qer_editorImage textures/vega_custom_src/black_p
+	qer_editorImage textures/common_src/black_p
 
-	diffuseMap textures/vega_custom_src/black_d
+	diffuseMap textures/common_src/black_d
 
 	surfaceparm nomarks
 	surfaceparm nolightmap
@@ -45,9 +45,9 @@ textures/vega_custom/black
 // black (nonsolid)
 textures/vega_custom/black_nonsolid
 {
-	qer_editorImage textures/vega_custom_src/black_p
+	qer_editorImage textures/common_src/black_p
 
-	diffuseMap textures/vega_custom_src/black_d
+	diffuseMap textures/common_src/black_d
 
 	surfaceparm nomarks
 	surfaceparm nolightmap
@@ -95,7 +95,8 @@ textures/vega_custom/white_nonsolid_150
 
 textures/vega_custom/vega_banner
 {
-	qer_editorImage textures/vega_custom_src/vega_banner_p
+	qer_editorImage textures/vega_custom_src/vega_banner_b
+	qer_alphaFunc greater 0.5
 
 	surfaceparm nomarks
 	surfaceparm nonsolid
@@ -120,7 +121,8 @@ textures/vega_custom/vega_banner
 
 textures/vega_custom/vega_motto
 {
-	qer_editorImage textures/vega_custom_src/vega_motto_p
+	qer_editorImage textures/vega_custom_src/vega_motto_b
+	qer_alphaFunc greater 0.5
 
 	surfaceparm nomarks
 	surfaceparm nonsolid
@@ -149,7 +151,8 @@ textures/vega_custom/vega_motto
 
 textures/vega_custom/arrow_elevator
 {
-	qer_editorImage textures/vega_custom_src/arrow_elevator_p
+	qer_editorImage textures/vega_custom_src/arrow_elevator_b
+	qer_alphaFunc greater 0.5
 
 	surfaceparm nomarks
 	surfaceparm nonsolid
@@ -174,7 +177,8 @@ textures/vega_custom/arrow_elevator
 
 textures/vega_custom/arrow_stairs
 {
-	qer_editorImage textures/vega_custom_src/arrow_stairs_p
+	qer_editorImage textures/vega_custom_src/arrow_stairs_b
+	qer_alphaFunc greater 0.5
 
 	surfaceparm nomarks
 	surfaceparm nonsolid
@@ -202,7 +206,8 @@ textures/vega_custom/arrow_stairs
 
 textures/vega_custom/sign_gate1
 {
-	qer_editorImage textures/vega_custom_src/sign_gate1_p
+	qer_editorImage textures/vega_custom_src/sign_gate1_b
+	qer_alphaFunc greater 0.5
 
 	surfaceparm nomarks
 	surfaceparm nonsolid
@@ -227,7 +232,8 @@ textures/vega_custom/sign_gate1
 
 textures/vega_custom/sign_gate2
 {
-	qer_editorImage textures/vega_custom_src/sign_gate2_p
+	qer_editorImage textures/vega_custom_src/sign_gate2_b
+	qer_alphaFunc greater 0.5
 
 	surfaceparm nomarks
 	surfaceparm nonsolid
@@ -252,7 +258,8 @@ textures/vega_custom/sign_gate2
 
 textures/vega_custom/sign_hatch
 {
-	qer_editorImage textures/vega_custom_src/sign_hatch_p
+	qer_editorImage textures/vega_custom_src/sign_hatch_b
+	qer_alphaFunc greater 0.5
 
 	surfaceparm nomarks
 	surfaceparm nonsolid
@@ -277,7 +284,8 @@ textures/vega_custom/sign_hatch
 
 textures/vega_custom/sign_workshop
 {
-	qer_editorImage textures/vega_custom_src/sign_workshop_p
+	qer_editorImage textures/vega_custom_src/sign_workshop_b
+	qer_alphaFunc greater 0.5
 
 	surfaceparm nomarks
 	surfaceparm nonsolid
@@ -418,7 +426,7 @@ textures/vega_custom/holo_observatory
 
 textures/vega_custom/starchart01
 {
-	qer_editorImage textures/vega_custom_src/starchart01_p
+	qer_editorImage textures/vega_custom_src/starchart01_d
 
 	q3map_surfacelight 150
 
@@ -431,7 +439,7 @@ textures/vega_custom/starchart01
 
 textures/vega_custom/starchart02
 {
-	qer_editorImage textures/vega_custom_src/starchart02_p
+	qer_editorImage textures/vega_custom_src/starchart02_d
 
 	q3map_surfacelight 150
 
@@ -448,7 +456,8 @@ textures/vega_custom/starchart02
 
 textures/vega_custom/roadstrip
 {
-	qer_editorImage textures/vega_custom_src/roadstrip_p
+	qer_editorImage textures/vega_custom_src/roadstrip_b
+	qer_alphaFunc greater 0.5
 
 	surfaceparm nomarks
 	surfaceparm nonsolid
@@ -473,7 +482,8 @@ textures/vega_custom/roadstrip
 // wheeltracks
 textures/vega_custom/wheeltracks
 {
-	qer_editorImage textures/vega_custom_src/wheeltracks_p
+	qer_editorImage textures/vega_custom_src/wheeltracks_b
+	qer_alphaFunc greater 0.135
 
 	surfaceparm nomarks
 	surfaceparm nonsolid

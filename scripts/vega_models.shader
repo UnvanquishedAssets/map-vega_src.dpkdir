@@ -12,6 +12,9 @@
 // plant leaf 1 with alpha channel
 models/mapobjects/vega/plant/leaf1
 {
+
+	qer_editorImage models/mapobjects/vega/plant/leaf1
+	qer_alphaFunc greater 0.5
 	surfaceparm nomarks
 	surfaceparm nonsolid
 	cull none
@@ -38,6 +41,9 @@ models/mapobjects/vega/plant/leaf1
 // plant leaf 2 with alpha channel
 models/mapobjects/vega/plant/leaf2
 {
+	qer_editorImage models/mapobjects/vega/plant/leaf2
+	qer_alphaFunc greater 0.5
+
 	surfaceparm nomarks
 	surfaceparm nonsolid
 	cull none
