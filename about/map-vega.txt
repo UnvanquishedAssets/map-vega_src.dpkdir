@@ -14,7 +14,7 @@
     Description
     
 	Map for the Unvanquished game project
-        http://www.unvanquished.net
+        https://unvanquished.net
         
     License
 

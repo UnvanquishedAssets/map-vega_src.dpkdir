@@ -13,12 +13,19 @@ This map is a work in progress by Stijn “Ingar” Buys for the [Unvanquished](
 
 Visit the [Unvanquished website](https://unvanquished.net/) for more information about the game itself.
 
-This map makes use of the [`tex-vega`](https://github.com/UnvanquishedAssets/tex-vega_src.dpkdir) texture set available under the terms and conditions of either the Creative Commons Attribution-Share Alike 3.0 License or the General Public License, version 2.
+This map makes use of the [`tex-vega`](https://github.com/UnvanquishedAssets/tex-vega_src.dpkdir) texture set available under the terms and conditions of either the Creative Commons Attribution-Share Alike 3.0 license or the General Public License, version 2.
 
 
 Legal
 -----
 
-The content of this package is available under the conditions of the [Creative Commons Attribution-Share Alike 3.0 License](https://creativecommons.org/licenses/by-sa/3.0).
+The content of this package is available under the conditions of the [Creative Commons Attribution-Share Alike 3.0 license](https://creativecommons.org/licenses/by-sa/3.0).
 
 Consult [`about/map-vega.txt`](about/map-vega.txt) for more information about authors.
+
+
+Credits
+-------
+
+- [Stijn “Ingar” Buys](http://ingar.intranifty.net/)
+- The [Unvanquished team](https://unvanquished.net/?page_id=336)
