@@ -1,4 +1,4 @@
-// shaders for the Tremulous map "Vega: Outpost 42"
+// shaders for the Tremulous map "Vega Industries: Research Outpost 13"
 // written by Ingar
 //
 
@@ -9,12 +9,15 @@
 // but to use the alpha channel for non-clipping areas
 //
 // polygonOffset is used to make decals
-
+//
+// qer_editorimage indicates what image should be used to draw
+// the texture in radiant
+//
 // -----------------------------------------------------------------
 // 
 
 
-// skybox "Vega 42" by Ingar
+// skybox "Vega" by Ingar
 textures/vega/sky
 {
       qer_editorimage env/vega/ing1_sky_small
@@ -30,23 +33,39 @@ textures/vega/sky
 }
 
 // -----------------------------------------------------------------
-// Shaders for Ingar's Texture Set 1
+// Shaders for the Vega texture set
 
 // panel with lights grid
+// *
+// * documented shader example
+// *
+// * a shader definition starts with the name of the shader
 textures/vega/ing1_panel01d_300
 {
+	// * qer_editorimage: the image used to draw the shader in radiant
 	qer_editorimage textures/vega/ing1_panel01d.tga
-	q3map_lightimage textures/vega/ing1_panel01d_glow.tga
+	// * q3map_surfacelight: the amount of light the shader will emit
 	q3map_surfacelight 300
+	// * q3map_lightimage: the image used as light color
+	q3map_lightimage textures/vega/ing1_panel01d_glow.tga
+	
+	// * this shader has 3 stages, each stage adds an extra 'texture layer'
+
+	// * stage 1: draw the base image (without lights)
 	{
 		map textures/vega/ing1_panel01d.tga
 		rgbGen identity
 	}
+	
+	// * stage 2: filter the lightmap on top of it
+	//   without lightmap the shader will be fullbright
 	{
 		map $lightmap 
 		blendfunc filter
 		rgbGen identity
 	}
+	
+	// * stage 3: add the light image on top of it
 	{
 		map textures/vega/ing1_panel01d_glow.tga
 		blendfunc add
@@ -180,11 +199,27 @@ textures/vega/ing1_panel02d_300
 	}
 }
 
+// special nocull panel
+textures/vega/ing1_panel02_nocull
+{
+	qer_editorimage textures/vega/ing1_panel02
+	cull none
+	{
+		map textures/vega/ing1_panel02.tga
+		rgbGen identity
+	}
+	{
+		map $lightmap 
+		blendfunc filter
+		rgbGen identity
+	}
+}
+
 // white metal panel with light stripes
 textures/vega/ing1_panel03_500
 {
-	qer_editorimage textures/vega/ing1_panel03_light
-	q3map_lightimage textures/vega/ing1_panel03_light
+	qer_editorimage textures/vega/ing1_panel03_light.tga
+	q3map_lightimage textures/vega/ing1_panel03_light.tga
 	q3map_surfacelight 500
 	{
 		map textures/vega/ing1_panel03_light.tga
@@ -227,25 +262,33 @@ textures/vega/ing1_trim02b_1k
 	}
 }
 
-// red strip 1000 light
-textures/vega/ing1_trim02f_1k
-{
-	qer_editorimage textures/vega/ing1_trim02f.tga
-	q3map_lightimage textures/vega/ing1_trim02f.tga
-	q3map_surfacelight 1000
-	surfaceparm nolightmap
-	{
-		map textures/vega/ing1_trim02f.tga
-		//rgbGen identity
-	}
-}
-
 // round blue light 500
 textures/vega/ing1_light01a_500
 {
 	qer_editorimage textures/vega/ing1_light01a
 	q3map_lightimage textures/vega/ing1_light01_glow
 	q3map_surfacelight 500
+	{
+		map textures/vega/ing1_light01a.tga
+		rgbGen identity
+	}
+	{
+		map $lightmap 
+		blendfunc filter
+		rgbGen identity
+	}
+	{
+		map textures/vega/ing1_light01_glow.tga
+		blendfunc add
+	}
+}
+
+// round blue light 500
+textures/vega/ing1_light01a_1500
+{
+	qer_editorimage textures/vega/ing1_light01a
+	q3map_lightimage textures/vega/ing1_light01_glow
+	q3map_surfacelight 1500
 	{
 		map textures/vega/ing1_light01a.tga
 		rgbGen identity
@@ -286,7 +329,7 @@ textures/vega/ing1_light02a_500
 textures/vega/ing1_light03a_500
 {
 	qer_editorimage textures/vega/ing1_light03a
-	q3map_lightimage textures/vega/ing1_light03a_glow
+	q3map_lightimage textures/vega/ing1_light03_glow
 	q3map_surfacelight 500
 	{
 		map textures/vega/ing1_light03a.tga
@@ -298,19 +341,19 @@ textures/vega/ing1_light03a_500
 		rgbGen identity
 	}
 	{
-		map textures/vega/ing1_light03a_glow.tga
+		map textures/vega/ing1_light03_glow.tga
 		blendfunc add
 	}
 }
 
-// square light
-textures/vega/ing1_light04_500
+// round small lights 500
+textures/vega/ing1_light03b_500
 {
-	qer_editorimage textures/vega/ing1_light04
-	q3map_lightimage textures/vega/ing1_light04_glow
+	qer_editorimage textures/vega/ing1_light03b
+	q3map_lightimage textures/vega/ing1_light03_glow
 	q3map_surfacelight 500
 	{
-		map textures/vega/ing1_light04
+		map textures/vega/ing1_light03b.tga
 		rgbGen identity
 	}
 	{
@@ -319,19 +362,19 @@ textures/vega/ing1_light04_500
 		rgbGen identity
 	}
 	{
-		map textures/vega/ing1_light04_glow
+		map textures/vega/ing1_light03_glow.tga
 		blendfunc add
 	}
 }
 
-// square light red
-textures/vega/ing1_light04red_500
+// control panel with keyboard
+textures/vega/ing1_controls01b
 {
-	qer_editorimage textures/vega/ing1_light04red
-	q3map_lightimage textures/vega/ing1_light04red_glow
-	q3map_surfacelight 500
+	qer_editorimage textures/vega/ing1_controls01b
+	q3map_lightimage textures/vega/ing1_controls01b_glow
+	q3map_surfacelight 50
 	{
-		map textures/vega/ing1_light04red
+		map textures/vega/ing1_controls01b_base
 		rgbGen identity
 	}
 	{
@@ -340,7 +383,7 @@ textures/vega/ing1_light04red_500
 		rgbGen identity
 	}
 	{
-		map textures/vega/ing1_light04red_glow
+		map textures/vega/ing1_controls01b_glow
 		blendfunc add
 	}
 }
@@ -369,27 +412,6 @@ textures/vega/ing1_controls01c_500
 }
 
 // metal trim with round lights 
-textures/vega/ing1_trim05a_250
-{
-	qer_editorimage textures/vega/ing1_trim05a
-	q3map_lightimage textures/vega/ing1_trim05a_glow
-	q3map_surfacelight 250
-	{
-		map textures/vega/ing1_trim05a.tga
-		rgbGen identity
-	}
-	{
-		map $lightmap 
-		blendfunc filter
-		rgbGen identity
-	}
-	{
-		map textures/vega/ing1_trim05a_glow.tga
-		blendfunc blend
-	}
-}
-
-// metal trim with round lights 
 textures/vega/ing1_trim05a_500
 {
 	qer_editorimage textures/vega/ing1_trim05a
@@ -414,6 +436,7 @@ textures/vega/ing1_trim05a_500
 textures/vega/ing1_grate02
 {
 	qer_editorimage textures/vega/ing1_grate02.tga
+	qer_trans .7
 	surfaceparm nomarks
 	surfaceparm metalsteps
 	cull none
@@ -434,6 +457,7 @@ textures/vega/ing1_grate02
 textures/vega/ing1_grate02_nonsolid
 {
 	qer_editorimage textures/vega/ing1_grate02.tga
+	qer_trans .7
 	surfaceparm nomarks
 	surfaceparm nonsolid
 	surfaceparm metalsteps
@@ -455,6 +479,7 @@ textures/vega/ing1_grate02_nonsolid
 textures/vega/ing1_grate07
 {
 	qer_editorimage textures/vega/ing1_grate07.tga
+	qer_trans .7
 	surfaceparm nomarks
 	surfaceparm metalsteps
 	cull none
@@ -475,6 +500,7 @@ textures/vega/ing1_grate07
 textures/vega/ing1_grate08
 {
 	qer_editorimage textures/vega/ing1_grate08.tga
+	qer_trans .7
 	surfaceparm nomarks
 	surfaceparm metalsteps
 	cull none
@@ -515,7 +541,9 @@ textures/vega/ing1_glass2
 // holo emitter
 textures/vega/ing1_holo
 {
-	qer_editorimage textures/vega/ing1_holo.tga
+	qer_editorimage textures/vega/ing1_holo_radiant.tga
+	q3map_lightimage textures/vega/ing1_holo.tga
+	q3map_surfacelight 25
 	qer_trans .7
 	surfaceparm nonsolid
 	surfaceparm noimpact
@@ -523,7 +551,7 @@ textures/vega/ing1_holo
 	cull none
         {
                 map textures/vega/ing1_holo.tga
-                tcmod scroll 0.0 -0.25
+                tcmod scroll 0.0 0.25
 		blendfunc blend
         }
 }
@@ -531,9 +559,9 @@ textures/vega/ing1_holo
 // plasma
 textures/vega/ing1_plasma
 {
-	qer_editorimage textures/vega/ing1_plasma_glow
+	qer_editorimage textures/vega/ing1_plasma_radiant
 	q3map_lightimage textures/vega/ing1_plasma_glow
-	q3map_surfacelight 150
+	q3map_surfacelight 100
 	qer_trans .7
 	surfaceparm nonsolid
 	surfaceparm noimpact
@@ -541,10 +569,37 @@ textures/vega/ing1_plasma
 	cull none
         {
                 map textures/vega/ing1_plasma
-                tcmod scroll 0.0 -0.5
+                tcmod scroll 0.0 0.5
 		blendfunc blend
         }
 }
+
+// plasma surface
+// rotate speed runs slightly behind in the ingame func_rotate entity
+textures/vega/ing1_plasma_surface
+{
+	qer_editorimage textures/vega/ing1_plasma_surface_radiant.tga
+        qer_trans .7
+        q3map_lightimage textures/vega/ing1_plasma_surface.tga
+        q3map_surfacelight 100
+        q3map_globaltexture
+
+      	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm nomarks        
+
+        cull none
+        // deformVertexes wave <div> <func> <base> <amplitude> <phase> <freq>
+        deformVertexes wave 64 sin .25 .25 0 .5
+        {
+                map textures/vega/ing1_plasma_surface.tga
+		//tcmod scale .5 .5
+                //tcmod turb 1.0 0.5 0.0 0.1
+                tcmod rotate 20
+                blendfunc blend
+        }
+}
+
 
 // water bubble
 textures/vega/water_bubble
@@ -577,32 +632,6 @@ textures/vega/water_surface
                 tcmod scale .5 .5
 		tcmod scroll .01 .01
         }
-//        {
-//                map $lightmap
-//                blendFunc GL_dst_color GL_zero
-//                rgbgen identity
-//        }
-}
-
-// radiator grid
-textures/vega/ing1_radiator01b
-{
-	qer_editorimage textures/vega/ing1_radiator01b.tga
-	surfaceparm nomarks
-	surfaceparm metalsteps
-	cull none
-	{
-		rgbGen identity
-		map textures/vega/ing1_radiator01b.tga
-		alphafunc GE128
-		depthwrite
-	}
-	{
-		rgbGen identity
-		map $lightmap
-		depthfunc equal
-		blendfunc filter
-	}
 }
 
 // warning sign 10,000 V
@@ -626,6 +655,172 @@ textures/vega/ing1_warning01
 	}
 }
 
+// vega industries logo
+textures/vega/ing1_vega_industries
+{
+	qer_editorimage textures/vega/ing1_vega_industries.tga
+	surfaceparm nomarks
+	surfaceparm nonsolid
+	polygonOffset
+	{
+		rgbGen identity
+		map textures/vega/ing1_vega_industries.tga
+		alphafunc GE128
+		depthwrite
+	}
+	{
+		rgbGen identity
+		map $lightmap
+		depthfunc equal
+		blendfunc filter
+	}
+}
+
+// vega industries logo wide
+textures/vega/ing1_vega_industries_wide
+{
+	qer_editorimage textures/vega/ing1_vega_industries_wide.tga
+	surfaceparm nomarks
+	surfaceparm nonsolid
+	polygonOffset
+	{
+		rgbGen identity
+		map textures/vega/ing1_vega_industries_wide.tga
+		alphafunc GE128
+		depthwrite
+	}
+	{
+		rgbGen identity
+		map $lightmap
+		depthfunc equal
+		blendfunc filter
+	}
+}
+
+// gate 1 holo arrow right
+textures/vega/ing1_vega_gate1right
+{
+	qer_editorimage textures/vega/ing1_vega_gate1right.tga
+	qer_trans .7
+	cull none
+	q3map_surfacelight 100
+	q3map_lightimage textures/vega/ing1_vega_gate1right.tga
+	// scrolling background
+	{
+		map textures/vega/ing1_water01.tga
+		tcmod scroll 0.0 0.25
+		blendfunc filter
+	}
+        // sign base
+	{
+		rgbGen identity
+		map textures/vega/ing1_vega_gate1right.tga
+		blendfunc blend
+	}              
+}
+
+// gate 1 holo arrow right broken
+textures/vega/ing1_vega_gate1right_broken
+{
+	qer_editorimage textures/vega/ing1_vega_gate1right_broken.tga
+	qer_trans .7
+	cull none
+	q3map_surfacelight 100
+	q3map_lightimage textures/vega/ing1_vega_gate1right.tga
+	// scrolling background
+	{
+		map textures/vega/ing1_water01.tga
+		tcmod scroll 0.0 0.25
+		blendfunc filter
+	}
+        // sign base
+	{
+		rgbGen identity
+        	alphaGen wave square 0 1.0 0.25 1
+		map textures/vega/ing1_vega_gate1right.tga
+		blendfunc blend
+	}
+        // sign base distorted
+	{
+        	rgbGen identity
+        	alphaGen wave sin 0 1.0 0.75 1
+		map textures/vega/ing1_vega_gate1right_broken.tga
+		blendfunc blend
+	}                
+}
+
+// gate 1 holo arrow right broken
+textures/vega/ing1_vega_gate1left_broken
+{
+	qer_editorimage textures/vega/ing1_vega_gate1left_broken.tga
+	qer_trans .7
+	cull none
+	q3map_surfacelight 100
+	q3map_lightimage textures/vega/ing1_vega_gate1left.tga
+	// scrolling background
+	{
+		map textures/vega/ing1_water01.tga
+		tcmod scroll 0.0 0.25
+		blendfunc filter
+	}
+        // sign base
+	//{
+	//	rgbGen identity
+        //	alphaGen wave square 0 1.0 0.25 1
+	//	map textures/vega/ing1_vega_gate1left.tga
+	//	blendfunc blend
+	//}
+        // sign base distorted
+	//{
+        //	rgbGen identity
+        //	alphaGen wave sin 0 1.0 0.75 1
+	//	map textures/vega/ing1_vega_gate1left_broken.tga
+	//	blendfunc blend
+	//}
+	// animation sequence
+	{
+		animMap 8 textures/vega/ing1_vega_gate1left.tga textures/vega/ing1_vega_gate1left_broken.tga textures/vega/ing1_vega_gate1left.tga textures/vega/ing1_vega_gate1left.tga textures/vega/ing1_vega_gate1left.tga textures/vega/ing1_vega_gate1left.tga textures/vega/ing1_vega_gate1left.tga textures/vega/ing1_vega_gate1left.tga
+		rgbGen identity
+		blendfunc blend
+	}
+}
+
+// gate 2 holo arrow right broken
+textures/vega/ing1_vega_gate2right_broken
+{
+	qer_editorimage textures/vega/ing1_vega_gate2right_broken.tga
+	qer_trans .7
+	cull none
+	q3map_surfacelight 100
+	q3map_lightimage textures/vega/ing1_vega_gate2right.tga
+	// scrolling background
+	{
+		map textures/vega/ing1_water01.tga
+		tcmod scroll 0.0 0.25
+		blendfunc filter
+	}
+        // sign base
+	//{
+	//	rgbGen identity
+        //	alphaGen wave square 0 1.0 0.25 1
+	//	map textures/vega/ing1_vega_gate2right.tga
+	//	blendfunc blend
+	//}
+        // sign base distorted
+	//{
+        //	rgbGen identity
+        //	alphaGen wave sin 0 1.0 0.75 1
+	//	map textures/vega/ing1_vega_gate2right_broken.tga
+	//	blendfunc blend
+	//}
+	// animation sequence
+	{
+		animMap 8 textures/vega/ing1_vega_gate2right.tga textures/vega/ing1_vega_gate2right.tga textures/vega/ing1_vega_gate2right.tga textures/vega/ing1_vega_gate2right.tga textures/vega/ing1_vega_gate2right_broken.tga textures/vega/ing1_vega_gate2right.tga textures/vega/ing1_vega_gate2right.tga textures/vega/ing1_vega_gate2right.tga
+		rgbGen identity
+		blendfunc blend
+	}
+}
+
 // metal steps floor
 //textures/vega/ing1_floor01:q3map
 //{
@@ -644,14 +839,14 @@ textures/vega/ing1_floor04:q3map
 // . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 // plant models and textures by Ingar
 
-// plant leaf with alpha channel
-models/mapobjects/vega/plant/leaf
+// plant leaf 1 with alpha channel
+models/mapobjects/vega/plant/leaf1
 {
 	surfaceparm nomarks
 	surfaceparm nonsolid
 	cull none
 	{
-		map models/mapobjects/vega/plant/leaf
+		map models/mapobjects/vega/plant/leaf1
 		alphafunc GE128
 		depthwrite
 		rgbGen identity
@@ -784,6 +979,108 @@ models/mapobjects/vega/monitor/display_door_red
 	surfaceparm nolightmap
 	{
 		map models/mapobjects/vega/monitor/display_door_red
+	}
+}
+
+// . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+// ceiling lights by Karvajalka
+
+// rectangular ceiling light
+models/mapobjects/vega/ceilinglight/ceilinglight1
+{
+	qer_editorimage models/mapobjects/vega/ceilinglight/ceilinglight1.tga
+	{
+		map models/mapobjects/vega/ceilinglight/ceilinglight1_base.tga
+		rgbGen identity
+	}
+	{
+		map $lightmap 
+		blendfunc filter
+		rgbGen identity
+	}
+	{
+		map models/mapobjects/vega/ceilinglight/ceilinglight1_glow.tga
+		blendfunc add
+	}
+}
+
+// tubular ceiling light
+models/mapobjects/vega/ceilinglight/ceilinglight2
+{
+	qer_editorimage models/mapobjects/vega/ceilinglight/ceilinglight2.tga
+	{
+		map models/mapobjects/vega/ceilinglight/ceilinglight2_base.tga
+		rgbGen identity
+	}
+	{
+		map $lightmap 
+		blendfunc filter
+		rgbGen identity
+	}
+	{
+		map models/mapobjects/vega/ceilinglight/ceilinglight2_glow.tga
+		blendfunc add
+	}
+}
+
+// tubular ceiling light (brown)
+models/mapobjects/vega/ceilinglight/ceilinglight2a
+{
+	qer_editorimage models/mapobjects/vega/ceilinglight/ceilinglight2a.tga
+	{
+		map models/mapobjects/vega/ceilinglight/ceilinglight2_base.tga
+		rgbGen identity
+	}
+	{
+		map $lightmap 
+		blendfunc filter
+		rgbGen identity
+	}
+	{
+		rgbGen identity
+		map models/mapobjects/vega/ceilinglight/ceilinglight2a_glow.tga
+		blendfunc add
+	}
+}
+
+// . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+// terminals by Karvajalka
+
+models/mapobjects/vega/terminal/terminal1
+{
+	qer_editorimage models/mapobjects/vega/terminal/terminal1
+	{
+		map models/mapobjects/vega/terminal/terminal1_base.tga
+		rgbGen identity
+	}
+	{
+		map $lightmap 
+		blendfunc filter
+		rgbGen identity
+	}
+	{
+		rgbGen identity
+		map models/mapobjects/vega/terminal/terminal1_display.tga
+		blendfunc add
+	}
+}
+
+models/mapobjects/vega/terminal/terminal2
+{
+	qer_editorimage models/mapobjects/vega/terminal/terminal2
+	{
+		map models/mapobjects/vega/terminal/terminal2_base.tga
+		rgbGen identity
+	}
+	{
+		map $lightmap 
+		blendfunc filter
+		rgbGen identity
+	}
+	{
+		rgbGen identity
+		map models/mapobjects/vega/terminal/terminal2_display.tga
+		blendfunc add
 	}
 }
 

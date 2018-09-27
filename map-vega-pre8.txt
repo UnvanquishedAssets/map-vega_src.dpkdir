@@ -1,0 +1,192 @@
+August 16, 2010
+=============================================================================
+
+Title                   : Vega Industries: Research Outpost 13
+
+Filename:               : map-vega-pre7.pk3
+
+Author                  : Stijn "Ingar" Buys
+
+Email Address           : ingar@telenet.be
+
+Web Site(s)             : http://ingar.satgnu.net/tremulous
+
+Description             : Map for the open source game Tremulous
+                          http://www.tremulous.net
+
+Credits to              : ID-Software for Quake III Arena,
+                          darklegion for Tremulous
+
+=============================================================================
+
+	All files in the map archive are available under the 
+	conditions of the Creative Commons License
+	http://creativecommons.org/licenses/by-sa/3.0
+
+=============================================================================
+
+VEGA INDUSTRIES: RESEARCH OUTPOST 13
+
+	This is a pre-release from a work in progress.
+	For testing purposes only. 
+	
+	--
+
+	Large corporations take their research very serious. Only the
+	smartest and brightest are hired, and no effort is spared
+	to protect these valueable human resources from harm.
+
+	Research Outpost 13 was probably the safest place in the universe.
+	On a small planet with a harsh and frozen climate, hidden in
+	an otherwise uninteresting part of the galaxy. The outpost provided
+	a well-protected shelter from the hostile environment, and
+	as outpost usually do, it harboured this strange sense of tranquility,
+	that given enough time would drive anyone mad with boredom.
+
+	This funny green creature was a most welcome diversion. It had hidden
+	itself inside a cargo container on the monthly supply run, and when
+	the scientists found it, hungry and exhausted, they couldn't resist
+	but to offer the poor creature some milk and cookies.
+
+	Kyp... a funny name for a funny creature. 
+
+	Kyp didn't mind all the running around and neurotic button pushing.
+	After all, these weren't the usual kind of scientists: they seemed
+	more interested in keeping their machines running than indecently 
+	prodding caged creatures with their devices.
+
+	As usually happens in large corporations, the janitor was the first
+	to notice something had gone terribly wrong. Kyp's cage hade been
+	left wide open and the creature was knowhere to be found. "This is
+	no place to leave little creatures wandering around", the janitor
+	murmured peevishly. "And who do you think will have to clean up all
+	the suprises it's going to leave behind?"
+
+	The echo of an eerie sound interrupted his grumbling. The power
+	supply had been acting weird all morning, and most of the equipment
+	seemed to disagree with their blueprint specifications. "The damned
+	rodent must have been shewing the cables. A few high-voltage jolts
+	will teach it some manners. Serves him well." The idea almost 
+	brought a smile to his face.
+
+	Almost.
+
+	The creature breathing down his nick wasn't green and cuddly. If
+	anything, it looked like the scientists had delved too eagerly
+	and too deep and had awakened something that should had been
+	left alone.
+
+	The creature on the other hand, didn't mind the janitor's ignorinace.
+	It didn't even mind if this janitor was just a harmless, unarmoured
+	mercenary without actual authority. A human called by any other name,
+	after all, tastes just as sweet.
+
+	The janitor's blood-stained broom hits the floor.
+
+	(To be continued)
+	
+SKYBOX
+
+	The Skybox was created with the personal edition of Terragen Classic
+	http://www.planetside.co.uk/
+
+	I used Spirit's tutorial and skybox scripts
+	http://maps.sp1r1t.org/tutorials/q3a_create_skybox/
+
+TEXTURES
+
+	The textures were created from pictures and edited with the Gimp.
+	The Vega Industries logo was made with Inkscape.
+
+MODELS
+
+	The monitor model and texture were made by f0rqu3.
+	The monitor display texture was made by Ingar, monitor background by Karvajalka.
+
+	The sign model was created by Karvajalka, textures by Ingar.
+
+	The ceiling light models and textures were created by Karvajalka.
+
+	The console model was made by Thorn.
+
+	The terminal model and textures were made by Karvajalka.
+
+	The toolcart and pump models were made by Thorn, textures by Ingar.
+
+	The container and plant models and textures were made by Ingar.
+
+	The globe model was made by Ingar. 
+	The globe texture was created by Jeremy "Jestr" Gardner. 
+	The original, high-resolution version can be downloaded here:
+	http://www.celestiamotherlode.net/catalog/show_addon_details.php?addon_id=227
+	
+SOUNDS
+
+	The sounds were edited with Audacity. I used my own recordings
+	and a number of sounds from the pdsounds collection.
+	http://www.pdsounds.org/
+
+	The synthloop was made with ZynAddSubFX.
+
+COMPILING
+
+	q3map2 -leaktest -samplesize 8 -meta
+	q3map2 -vis -saveprt
+	q3map2 -light -fast -shade -dirty -patchshadows -samples 3 -bounce 6 -bouncegrid -cpma
+
+	Compile time: 35 minutes (AMD Phenom II X4 955)
+	17250 brushes, 1743 patches, 63 model instances
+
+THANKS
+
+	Thorn[mDc] for the models, testing and advice
+	Stalker and gareth for their support
+
+	Karvajalka for the awesome models
+	maci for hosting on satgnu
+	Lava_Croft for testing and advice
+	Trael for support
+
+	f0rqu3 for the monitor model and testing
+
+	Jestr for the globe texture
+
+	#tremulous on the freenode IRC network
+
+	All =KCT= members
+
+HISTORY
+
+	2010-08-08
+		pre-release 8
+
+		renamed the map to 'Vega Industries: Research Outpost 13'
+		added logos
+		added ase models
+		optimized vis
+		changed metal stairs layout
+		changed holo emitter sound
+
+	2010-08-08
+		pre-release 7
+
+	2010-04-12
+		pre-release 6
+
+	2010-04-06
+		pre-release 5
+
+	2010-04-05
+		pre-release 4
+
+	2010-01-24
+		pre-release 3
+
+	2010-01-10
+		pre-release 2
+
+	2009-12-25
+		pre-release 1
+
+Questions, bugs or suggestions? Send them to ingar@telenet.be
+
