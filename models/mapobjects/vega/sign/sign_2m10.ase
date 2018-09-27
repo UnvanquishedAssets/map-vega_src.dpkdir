@@ -12,7 +12,7 @@
 *MATERIAL_LIST {
 	*MATERIAL_COUNT 3
 	*MATERIAL 0 {
-		*MATERIAL_NAME "09 - Default"
+		*MATERIAL_NAME "textures/vega/ing1_base02a"
 		*MATERIAL_CLASS "Standard"
 		*MATERIAL_AMBIENT 0.5882	0.5882	0.5882
 		*MATERIAL_DIFFUSE 0.5882	0.5882	0.5882
@@ -27,11 +27,11 @@
 		*MATERIAL_FALLOFF In
 		*MATERIAL_XP_TYPE Filter
 		*MAP_DIFFUSE {
-			*MAP_NAME "Map #1"
+			*MAP_NAME "textures/vega/ing1_base02a"
 			*MAP_CLASS "Bitmap"
 			*MAP_SUBNO 1
 			*MAP_AMOUNT 1.0000
-			*BITMAP "/models/mapobjects/vega/sign/sign_back.jpg"
+			*BITMAP "textures/vega/ing1_base02a.png"
 			*MAP_TYPE Screen
 			*UVW_U_OFFSET 0.0000
 			*UVW_V_OFFSET 0.0000
@@ -48,7 +48,7 @@
 		}
 	}
 	*MATERIAL 1 {
-		*MATERIAL_NAME "02 - Default"
+		*MATERIAL_NAME "models/mapobjects/vega/sign/sign_face"
 		*MATERIAL_CLASS "Standard"
 		*MATERIAL_AMBIENT 0.5882	0.5882	0.5882
 		*MATERIAL_DIFFUSE 0.5882	0.5882	0.5882
@@ -63,11 +63,11 @@
 		*MATERIAL_FALLOFF In
 		*MATERIAL_XP_TYPE Filter
 		*MAP_DIFFUSE {
-			*MAP_NAME "Map #1"
+			*MAP_NAME "models/mapobjects/vega/sign/sign_face"
 			*MAP_CLASS "Bitmap"
 			*MAP_SUBNO 1
 			*MAP_AMOUNT 1.0000
-			*BITMAP "/models/mapobjects/vega/sign/sign_face.jpg"
+			*BITMAP "models/mapobjects/vega/sign/sign_face.jpg"
 			*MAP_TYPE Screen
 			*UVW_U_OFFSET 0.0000
 			*UVW_V_OFFSET 0.0000
@@ -84,7 +84,7 @@
 		}
 	}
 	*MATERIAL 2 {
-		*MATERIAL_NAME "07 - Default"
+		*MATERIAL_NAME "models/mapobjects/vega/sign/sign_2m10"
 		*MATERIAL_CLASS "Standard"
 		*MATERIAL_AMBIENT 0.5882	0.5882	0.5882
 		*MATERIAL_DIFFUSE 0.5882	0.5882	0.5882
@@ -99,11 +99,11 @@
 		*MATERIAL_FALLOFF In
 		*MATERIAL_XP_TYPE Filter
 		*MAP_DIFFUSE {
-			*MAP_NAME "Map #1"
+			*MAP_NAME "models/mapobjects/vega/sign/sign_2m10"
 			*MAP_CLASS "Bitmap"
 			*MAP_SUBNO 1
 			*MAP_AMOUNT 1.0000
-			*BITMAP "/models/mapobjects/vega/sign/sign_2m10.jpg"
+			*BITMAP "models/mapobjects/vega/sign/sign_2m10.jpg"
 			*MAP_TYPE Screen
 			*UVW_U_OFFSET 0.0000
 			*UVW_V_OFFSET 0.0000
