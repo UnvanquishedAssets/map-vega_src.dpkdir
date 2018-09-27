@@ -34,7 +34,7 @@ textures/vega/sky
 // panel with lights grid
 textures/vega/ing1_panel01d_300
 {
-	qer_editorimage textures/vega/ing1_panel01d_light.tga
+	qer_editorimage textures/vega/ing1_panel01d.tga
 	q3map_lightimage textures/vega/ing1_panel01d_glow.tga
 	q3map_surfacelight 300
 	{
@@ -52,9 +52,32 @@ textures/vega/ing1_panel01d_300
 	}
 }
 
+// panel with broken lights grid
+textures/vega/ing1_panel01d_broken
+{
+	qer_editorimage textures/vega/ing1_panel01d_dim.tga
+	q3map_lightimage textures/vega/ing1_panel01d_glow.tga
+	q3map_surfacelight 500
+	q3map_lightstyle 1
+	{
+		map textures/vega/ing1_panel01d_dim.tga
+		rgbGen identity
+	}
+	{
+		map $lightmap 
+		blendfunc filter
+		rgbGen identity
+	}
+	{
+		map textures/vega/ing1_panel01d_glow.tga
+		blendfunc add
+		rgbGen wave sawtooth 0.0 1.0 0 0.5
+	}
+}
+
 textures/vega/ing1_panel01d_500
 {
-	qer_editorimage textures/vega/ing1_panel01d_light.tga
+	qer_editorimage textures/vega/ing1_panel01d.tga
 	q3map_lightimage textures/vega/ing1_panel01d_glow.tga
 	q3map_surfacelight 500
 	{
@@ -68,6 +91,27 @@ textures/vega/ing1_panel01d_500
 	}
 	{
 		map textures/vega/ing1_panel01d_glow.tga
+		blendfunc add
+	}
+}
+
+// metal panel with round blue lights
+textures/vega/ing1_panel01e_300
+{
+	qer_editorimage textures/vega/ing1_panel01e
+	q3map_lightimage textures/vega/ing1_panel01e_glow
+	q3map_surfacelight 300
+	{
+		map textures/vega/ing1_panel01e.tga
+		rgbGen identity
+	}
+	{
+		map $lightmap 
+		blendfunc filter
+		rgbGen identity
+	}
+	{
+		map textures/vega/ing1_panel01e_glow.tga
 		blendfunc add
 	}
 }
@@ -135,7 +179,7 @@ textures/vega/ing1_panel02d_300
 	}
 }
 
-// white metal  panel with light stripes
+// white metal panel with light stripes
 textures/vega/ing1_panel03_500
 {
 	qer_editorimage textures/vega/ing1_panel03_light
@@ -201,7 +245,7 @@ textures/vega/ing1_light01a_500
 	}
 }
 
-// round brow light 500
+// round brown light 500
 textures/vega/ing1_light02a_500
 {
 	qer_editorimage textures/vega/ing1_light02a
@@ -219,6 +263,70 @@ textures/vega/ing1_light02a_500
 	{
 		map textures/vega/ing1_light02_glow.tga
 		blendfunc add
+	}
+}
+
+// round small lights 500
+textures/vega/ing1_light03a_500
+{
+	qer_editorimage textures/vega/ing1_light03a
+	q3map_lightimage textures/vega/ing1_light03a_glow
+	q3map_surfacelight 500
+	{
+		map textures/vega/ing1_light03a.tga
+		rgbGen identity
+	}
+	{
+		map $lightmap 
+		blendfunc filter
+		rgbGen identity
+	}
+	{
+		map textures/vega/ing1_light03a_glow.tga
+		blendfunc add
+	}
+}
+
+
+// metal trim with round lights 
+textures/vega/ing1_trim05a_250
+{
+	qer_editorimage textures/vega/ing1_trim05a
+	q3map_lightimage textures/vega/ing1_trim05a_glow
+	q3map_surfacelight 250
+	{
+		map textures/vega/ing1_trim05a.tga
+		rgbGen identity
+	}
+	{
+		map $lightmap 
+		blendfunc filter
+		rgbGen identity
+	}
+	{
+		map textures/vega/ing1_trim05a_glow.tga
+		blendfunc blend
+	}
+}
+
+// metal trim with round lights 
+textures/vega/ing1_trim05a_500
+{
+	qer_editorimage textures/vega/ing1_trim05a
+	q3map_lightimage textures/vega/ing1_trim05a_glow
+	q3map_surfacelight 500
+	{
+		map textures/vega/ing1_trim05a.tga
+		rgbGen identity
+	}
+	{
+		map $lightmap 
+		blendfunc filter
+		rgbGen identity
+	}
+	{
+		map textures/vega/ing1_trim05a_glow.tga
+		blendfunc blend
 	}
 }
 
@@ -318,7 +426,13 @@ textures/vega/ing1_warning01
 }
 
 // metal steps floor
-textures/vega/ing1_floor01:q3map
+//textures/vega/ing1_floor01:q3map
+//{
+//	surfaceparm metalsteps
+//}
+
+// metal steps floor
+textures/vega/ing1_floor04:q3map
 {
 	surfaceparm metalsteps
 }
@@ -326,16 +440,17 @@ textures/vega/ing1_floor01:q3map
 // -----------------------------------------------------------------
 // Models
 
+// . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 // plant model and textures by Ingar
 
 // plant leaf with alpha channel
-models/vega/plant/leaf
+models/mapobjects/vega/plant/leaf
 {
 	surfaceparm nomarks
 	surfaceparm nonsolid
 	cull none
 	{
-		map models/vega/plant/leaf
+		map models/mapobjects/vega/plant/leaf
 		alphafunc GE128
 		depthwrite
 		rgbGen identity
@@ -349,27 +464,29 @@ models/vega/plant/leaf
 }
 
 // phong shaded pot
-models/vega/plant/pot:q3map
+models/mapobjects/vega/plant/pot:q3map
 {
-	q3map_shadeangle 90
+	q3map_shadeangle 45
 }
 
+// . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 // container model and textures by Ingar
 
 // phong shaded round container
-models/vega/container1/container1:q3map
+models/mapobjects/vega/container1/container1:q3map
 {
-	q3map_shadeangle 90
+	q3map_shadeangle 45
 }
 
+// . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 // monitor model by f0rqu3, shaders and display textures by Ingar
 
 // monitor body light
-models/vega/monitor/monitor
+models/mapobjects/vega/monitor/monitor
 {
 	surfaceparm nomarks
 	{
-		map models/vega/monitor/monitor
+		map models/mapobjects/vega/monitor/monitor
 		rgbGen identity
 	}
 	{
@@ -378,38 +495,38 @@ models/vega/monitor/monitor
 		rgbGen identity
 	}
 	{
-		map models/vega/monitor/monitor_light
+		map models/mapobjects/vega/monitor/monitor_light
 		blendfunc add
 	}
 }
 
 // monitor display
-models/vega/monitor/display
+models/mapobjects/vega/monitor/display
 {
 	surfaceparm nomarks
 	surfaceparm nolightmap
 	{
-		map models/vega/monitor/display
+		map models/mapobjects/vega/monitor/display
 	}
 }
 
 // monitor display - blue door
-models/vega/monitor/display_door_blue
+models/mapobjects/vega/monitor/display_door_blue
 {
 	surfaceparm nomarks
 	surfaceparm nolightmap
 	{
-		map models/vega/monitor/display_door_blue
+		map models/mapobjects/vega/monitor/display_door_blue
 	}
 }
 
 // monitor display - red door
-models/vega/monitor/display_door_red
+models/mapobjects/vega/monitor/display_door_red
 {
 	surfaceparm nomarks
 	surfaceparm nolightmap
 	{
-		map models/vega/monitor/display_door_red
+		map models/mapobjects/vega/monitor/display_door_red
 	}
 }
 
@@ -434,4 +551,3 @@ textures/vega/nolightmap
 		map textures/vega/black
 	}
 }
-// 
