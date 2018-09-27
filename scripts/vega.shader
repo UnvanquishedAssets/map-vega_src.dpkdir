@@ -441,7 +441,7 @@ textures/vega/ing1_floor04:q3map
 // Models
 
 // . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-// plant model and textures by Ingar
+// plant models and textures by Ingar
 
 // plant leaf with alpha channel
 models/mapobjects/vega/plant/leaf
@@ -464,19 +464,39 @@ models/mapobjects/vega/plant/leaf
 }
 
 // phong shaded pot
-models/mapobjects/vega/plant/pot:q3map
+//models/mapobjects/vega/plant/pot:q3map
+//{
+//	q3map_shadeangle 45
+//}
+
+// plant leaf 2 with alpha channel
+models/mapobjects/vega/plant/leaf2
 {
-	q3map_shadeangle 45
+	surfaceparm nomarks
+	surfaceparm nonsolid
+	cull none
+	{
+		map models/mapobjects/vega/plant/leaf2
+		alphafunc GE128
+		depthwrite
+		rgbGen identity
+	}
+	{
+		rgbGen identity
+		map $lightmap
+		depthfunc equal
+		blendfunc filter
+	}
 }
 
 // . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 // container model and textures by Ingar
 
 // phong shaded round container
-models/mapobjects/vega/container1/container1:q3map
-{
-	q3map_shadeangle 45
-}
+//models/mapobjects/vega/container1/container1:q3map
+//{
+//	q3map_shadeangle 45
+//}
 
 // . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 // monitor model by f0rqu3, shaders and display textures by Ingar
