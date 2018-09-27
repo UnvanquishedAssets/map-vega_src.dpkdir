@@ -1,0 +1,86 @@
+January 10, 2009
+=============================================================================
+
+Title                   : Vega: Outpost 42
+
+Filename	        : map-vega-pre2.pk3
+
+Author                  : Stijn "Ingar" Buys
+
+Email Address           : ingar@telenet.be
+
+Web Site(s)             : http://ingar.satgnu.net/tremulous
+
+Description             : Map for the open source game Tremulous
+			  http://www.tremulous.net
+
+Credits to              : ID-Software for Quake III Arena,
+                          darklegion for Tremulous
+
+=============================================================================
+
+	All files in the map archive are available under the 
+	conditions of the Creative Commons License
+	http://creativecommons.org/licenses/by-sa/2.5
+
+=============================================================================
+
+VEGA: OUTPOST 42
+
+	This is a pre-release and the map is far from finished.
+	For testing purposes only.
+
+SKYBOX
+
+	The Skybox was created with the personal edition of Terragen Classic
+	http://www.planetside.co.uk
+
+	I used Spirit's tutorial and skybox scripts
+	http://maps.sp1r1t.org/tutorials/q3a_create_skybox/
+
+TEXTURES
+
+	The textures were created from pictures and edited with the Gimp.
+
+MODELS
+
+	The monitor model was made by f0rqu3.
+
+	The sign model was created by Karvajalka.
+
+	The toolcart model was made by Thorn[mDc].
+
+	Were necessary, I edited the model textures and texture paths.
+
+SOUNDS
+
+	The sounds were edited with audacity. I used my own recordings
+	and a number of sounds from the pdsounds collection.
+	http://www.pdsounds.org/
+
+THANKS
+
+	Thorn[mDc] for the toolcart model and the test games
+	Stalker and gareth for their support
+
+	Karvajalka for the sign model
+	Lava_Croft for showing me how to write decent shaders
+	maci for hosting on satgnu
+	Trael for support
+
+	f0rqu3 for the monitor model
+
+	#tremulous on the freenode IRC network
+
+	All =KCT= members
+
+HISTORY
+
+	2010-01-10
+		pre-release 2
+
+	2009-12-25
+		pre-release 1
+
+Questions, bugs or suggestions? Send them to ingar@telenet.be
+
