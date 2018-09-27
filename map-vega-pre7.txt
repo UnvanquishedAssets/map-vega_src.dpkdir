@@ -1,0 +1,141 @@
+August 8, 2010
+=============================================================================
+
+Title                   : Vega: Outpost 42
+
+Filename:               : map-vega-pre7.pk3
+
+Author                  : Stijn "Ingar" Buys
+
+Email Address           : ingar@telenet.be
+
+Web Site(s)             : http://ingar.satgnu.net/tremulous
+
+Description             : Map for the open source game Tremulous
+                          http://www.tremulous.net
+
+Credits to              : ID-Software for Quake III Arena,
+                          darklegion for Tremulous
+
+=============================================================================
+
+	All files in the map archive are available under the 
+	conditions of the Creative Commons License
+	http://creativecommons.org/licenses/by-sa/3.0
+
+=============================================================================
+
+VEGA: OUTPOST 42
+
+	This is a pre-release from a work in progress.
+	For testing purposes only.
+
+	--
+
+	Large corporations take their research very serious. Only the
+	smartest and brightest are hired, and no effort is spared
+	to protect these valueable human resources from harm.
+
+	Outpost 42 was probably the safest place in the universe. A small
+	planet with harsh and frozen climate, hidden in an otherwise
+	uninteresting part of the galaxy. The outpost provided
+	a well-protected shelter from the hostile environment, and
+	as outpost usually do, it harboured this strange sense of tranquility,
+	that given enough time would drive anyone mad with boredom.
+
+	This funny green creature was a most welcome diversion. It had hidden
+	itself inside a cargo container on the monthly supply run and when
+	the scientists found it, hungry and exhausted, they couldn't resist
+	but to offer the poor creature some cookies and milk.
+
+	Kyp... a funny name for a funny creature. 
+
+	(to be continued)
+	
+
+SKYBOX
+
+	The Skybox was created with the personal edition of Terragen Classic
+	http://www.planetside.co.uk/
+
+	I used Spirit's tutorial and skybox scripts
+	http://maps.sp1r1t.org/tutorials/q3a_create_skybox/
+
+TEXTURES
+
+	The textures were created from pictures I edited with the Gimp.
+
+MODELS
+
+	The monitor model was made by f0rqu3.
+	The monitor display textures were made by me.
+
+	The sign model was created by Karvajalka, textures by Ingar.
+
+	The toolcart and pump models were made by Thorn[mDc], textures by Ingar.
+
+	The plants and container models and textures were made by me.
+
+	The globe model was made by me. 
+	The globe texture was created by Jeremy "Jestr" Gardner. 
+	The original, high-resolution version can be downloaded here:
+	http://www.celestiamotherlode.net/catalog/show_addon_details.php?addon_id=227
+	
+SOUNDS
+
+	The sounds were edited with Audacity. I used my own recordings
+	and a number of sounds from the pdsounds collection.
+	http://www.pdsounds.org/
+
+COMPILING
+
+	q3map2 -leaktest -samplesize 8 -meta
+	q3map2 -vis -saveprt
+	q3map2 -light -fast -shade -dirty -patchshadows -samples 3 -bounce 6 -bouncegrid -cpma
+
+	Compile time: 30 minutes (AMD Phenom II X4 955)
+	16609 brushes, 1693 patches
+
+THANKS
+
+	Thorn[mDc] for the models and the test games
+	Stalker and gareth for their support
+
+	Karvajalka for the sign model
+	Lava_Croft for showing me how to write decent shaders
+	maci for hosting on satgnu
+	Trael for support
+
+	f0rqu3 for the monitor model
+
+	Jestr for the globe texture
+
+	#tremulous on the freenode IRC network
+
+	All =KCT= members
+
+HISTORY
+
+	2010-08-08
+		pre-release 7
+
+	2010-04-12
+		pre-release 6
+
+	2010-04-06
+		pre-release 5
+
+	2010-04-05
+		pre-release 4
+
+	2010-01-24
+		pre-release 3
+
+	2010-01-10
+		pre-release 2
+
+	2009-12-25
+		pre-release 1
+
+Questions, bugs or suggestions? Send them to ingar@telenet.be
+

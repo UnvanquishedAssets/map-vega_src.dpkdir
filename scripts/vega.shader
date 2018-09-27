@@ -201,10 +201,11 @@ textures/vega/ing1_panel03_500
 	}
 }
 
-// light trim 500 light
+// white strip 500 light
 textures/vega/ing1_trim02b_500
 {
 	qer_editorimage textures/vega/ing1_trim02b.tga
+	q3map_lightimage textures/vega/ing1_trim02b.tga
 	q3map_surfacelight 500
 	surfaceparm nolightmap
 	{
@@ -213,14 +214,28 @@ textures/vega/ing1_trim02b_500
 	}
 }
 
-// light trim 1000 light
+// white strip 1000 light
 textures/vega/ing1_trim02b_1k
 {
 	qer_editorimage textures/vega/ing1_trim02b.tga
+	q3map_lightimage textures/vega/ing1_trim02b.tga
 	q3map_surfacelight 1000
 	surfaceparm nolightmap
 	{
 		map textures/vega/ing1_trim02b.tga
+		//rgbGen identity
+	}
+}
+
+// red strip 1000 light
+textures/vega/ing1_trim02f_1k
+{
+	qer_editorimage textures/vega/ing1_trim02f.tga
+	q3map_lightimage textures/vega/ing1_trim02f.tga
+	q3map_surfacelight 1000
+	surfaceparm nolightmap
+	{
+		map textures/vega/ing1_trim02f.tga
 		//rgbGen identity
 	}
 }
@@ -288,6 +303,70 @@ textures/vega/ing1_light03a_500
 	}
 }
 
+// square light
+textures/vega/ing1_light04_500
+{
+	qer_editorimage textures/vega/ing1_light04
+	q3map_lightimage textures/vega/ing1_light04_glow
+	q3map_surfacelight 500
+	{
+		map textures/vega/ing1_light04
+		rgbGen identity
+	}
+	{
+		map $lightmap 
+		blendfunc filter
+		rgbGen identity
+	}
+	{
+		map textures/vega/ing1_light04_glow
+		blendfunc add
+	}
+}
+
+// square light red
+textures/vega/ing1_light04red_500
+{
+	qer_editorimage textures/vega/ing1_light04red
+	q3map_lightimage textures/vega/ing1_light04red_glow
+	q3map_surfacelight 500
+	{
+		map textures/vega/ing1_light04red
+		rgbGen identity
+	}
+	{
+		map $lightmap 
+		blendfunc filter
+		rgbGen identity
+	}
+	{
+		map textures/vega/ing1_light04red_glow
+		blendfunc add
+	}
+}
+
+// control panel with small red lights
+textures/vega/ing1_controls01c_500
+{
+	qer_editorimage textures/vega/ing1_controls01c
+	q3map_lightimage textures/vega/ing1_controls01c_glow
+	q3map_surfacelight 500
+	q3map_lightstyle 2
+	{
+		map textures/vega/ing1_controls01c
+		rgbGen identity
+	}
+	{
+		map $lightmap 
+		blendfunc filter
+		rgbGen identity
+	}
+	{
+		map textures/vega/ing1_controls01c_glow
+		blendfunc add
+		rgbGen wave square 0.0 1.0 0 1
+	}
+}
 
 // metal trim with round lights 
 textures/vega/ing1_trim05a_250
@@ -351,7 +430,7 @@ textures/vega/ing1_grate02
 	}
 }
 
-// grate
+// grate 02
 textures/vega/ing1_grate02_nonsolid
 {
 	qer_editorimage textures/vega/ing1_grate02.tga
@@ -361,6 +440,46 @@ textures/vega/ing1_grate02_nonsolid
 	cull none
 	{
 		map textures/vega/ing1_grate02.tga
+		alphafunc GE128
+		depthwrite
+	}
+	{
+		map $lightmap
+		depthfunc equal
+		blendfunc filter
+		rgbGen identity
+	}
+}
+
+// grate 07
+textures/vega/ing1_grate07
+{
+	qer_editorimage textures/vega/ing1_grate07.tga
+	surfaceparm nomarks
+	surfaceparm metalsteps
+	cull none
+	{
+		map textures/vega/ing1_grate07.tga
+		alphafunc GE128
+		depthwrite
+	}
+	{
+		map $lightmap
+		depthfunc equal
+		blendfunc filter
+		rgbGen identity
+	}
+}
+
+// grate 08
+textures/vega/ing1_grate08
+{
+	qer_editorimage textures/vega/ing1_grate08.tga
+	surfaceparm nomarks
+	surfaceparm metalsteps
+	cull none
+	{
+		map textures/vega/ing1_grate08.tga
 		alphafunc GE128
 		depthwrite
 	}
@@ -409,6 +528,24 @@ textures/vega/ing1_holo
         }
 }
 
+// plasma
+textures/vega/ing1_plasma
+{
+	qer_editorimage textures/vega/ing1_plasma_glow
+	q3map_lightimage textures/vega/ing1_plasma_glow
+	q3map_surfacelight 150
+	qer_trans .7
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm nomarks        
+	cull none
+        {
+                map textures/vega/ing1_plasma
+                tcmod scroll 0.0 -0.5
+		blendfunc blend
+        }
+}
+
 // water bubble
 textures/vega/water_bubble
 {
@@ -447,16 +584,6 @@ textures/vega/water_surface
 //        }
 }
 
-// red square
-textures/vega/ing1_redsquare_250
-{
-	qer_editorimage textures/vega/ing1_redsquare.tga
-	surfaceparm nolightmap
-	q3map_surfacelight 250
-	{
-		map textures/vega/ing1_redsquare.tga
-	}
-}
 // radiator grid
 textures/vega/ing1_radiator01b
 {
