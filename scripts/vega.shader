@@ -1,4 +1,4 @@
-// shaders for the Tremulous map "Vega Outpost 42"
+// shaders for the Tremulous map "Vega: Outpost 42"
 // written by Ingar
 //
 
@@ -11,7 +11,8 @@
 // polygonOffset is used to make decals
 
 // -----------------------------------------------------------------
-// Sky
+// 
+
 
 // skybox "Vega 42" by Ingar
 textures/vega/sky
@@ -350,7 +351,28 @@ textures/vega/ing1_grate02
 	}
 }
 
-// hires glass
+// grate
+textures/vega/ing1_grate02_nonsolid
+{
+	qer_editorimage textures/vega/ing1_grate02.tga
+	surfaceparm nomarks
+	surfaceparm nonsolid
+	surfaceparm metalsteps
+	cull none
+	{
+		map textures/vega/ing1_grate02.tga
+		alphafunc GE128
+		depthwrite
+	}
+	{
+		map $lightmap
+		depthfunc equal
+		blendfunc filter
+		rgbGen identity
+	}
+}
+
+// glass
 textures/vega/ing1_glass2
 {
 	qer_editorimage textures/vega/ing1_glass2.tga
@@ -371,6 +393,60 @@ textures/vega/ing1_glass2
         }
 }
 
+// holo emitter
+textures/vega/ing1_holo
+{
+	qer_editorimage textures/vega/ing1_holo.tga
+	qer_trans .7
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm nomarks        
+	cull none
+        {
+                map textures/vega/ing1_holo.tga
+                tcmod scroll 0.0 -0.25
+		blendfunc blend
+        }
+}
+
+// water bubble
+textures/vega/water_bubble
+{
+	qer_editorimage textures/vega/ing1_bubble
+        cull none
+        {
+                map textures/vega/ing1_bubble
+                blendfunc blend
+        }
+}
+
+// water surface
+textures/vega/water_surface
+{
+	qer_editorimage textures/vega/ing1_water01.tga
+        qer_trans .5
+        q3map_lightimage textures/vega/ing1_water01.tga
+        q3map_globaltexture
+
+        surfaceparm nonsolid
+        surfaceparm water
+
+        cull none
+        deformVertexes wave 64 sin .25 .25 0 .5       
+        {
+                map textures/vega/ing1_water01.tga
+                blendFunc GL_dst_color GL_one
+                rgbgen identity
+                tcmod scale .5 .5
+		tcmod scroll .01 .01
+        }
+//        {
+//                map $lightmap
+//                blendFunc GL_dst_color GL_zero
+//                rgbgen identity
+//        }
+}
+
 // red square
 textures/vega/ing1_redsquare_250
 {
@@ -385,7 +461,6 @@ textures/vega/ing1_redsquare_250
 textures/vega/ing1_radiator01b
 {
 	qer_editorimage textures/vega/ing1_radiator01b.tga
-	//surfaceparm trans
 	surfaceparm nomarks
 	surfaceparm metalsteps
 	cull none
@@ -407,7 +482,6 @@ textures/vega/ing1_radiator01b
 textures/vega/ing1_warning01
 {
 	qer_editorimage textures/vega/ing1_warning01.tga
-	//surfaceparm trans
 	surfaceparm nomarks
 	surfaceparm nonsolid
 	polygonOffset
@@ -486,6 +560,42 @@ models/mapobjects/vega/plant/leaf2
 		map $lightmap
 		depthfunc equal
 		blendfunc filter
+	}
+}
+
+// . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+// globe model by Ingar
+// texture "sedna" by Jestr
+
+models/mapobjects/vega/globe/globe
+{
+	surfaceparm nomarks
+	surfaceparm nonsolid
+	cull none
+	{
+		map models/mapobjects/vega/globe/globe
+		tcmod scroll .05 0.0
+	}
+}
+
+// . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+// holo emitter model and textures by Ingar
+
+models/mapobjects/vega/emitter/emitter
+{
+	surfaceparm nomarks
+	{
+		map models/mapobjects/vega/emitter/emitter
+		rgbGen identity
+	}
+	{
+		map $lightmap 
+		blendfunc filter
+		rgbGen identity
+	}
+	{
+		map models/mapobjects/vega/emitter/emitter_glow
+		blendfunc add
 	}
 }
 

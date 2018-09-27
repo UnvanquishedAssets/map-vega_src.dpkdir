@@ -1,0 +1,39 @@
+// particles for the Tremulous map "Vega: Outpost 42"
+// written by Ingar
+// 
+
+// bubbles for the plant aquarium
+particles/mapobjects/vega/bubbles
+{
+	ejector
+	{
+		particle
+		{
+		shader sync textures/vega/water_bubble
+		displacement -4 -4 -4 ~8
+
+		velocityType		static
+		velocityDir		linear
+		velocityMagnitude	15	
+		velocity		0 0 100 ~1
+
+		accelerationType        static
+		accelerationDir         linear
+		acceleration            0 0 150 ~1
+		accelerationMagnitude   10
+
+		bounce                  0
+		// radius <delay> <initial> <final>
+		radius                  0 0.125~0.025 0.25 
+		// alpha <delay> <initial> <final>
+		alpha                   0 0.7~0.1 1.0
+//		rotation                0 ~360 -
+		lifetime                800
+		}
+
+	count infinite
+	delay 0
+	period 50 - ~10%
+	}
+	
+}
