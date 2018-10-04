@@ -14,7 +14,7 @@ models/mapobjects/vega/plant/leaf1
 {
 
 	qer_editorImage models/mapobjects/vega/plant/leaf1
-	qer_alphaFunc greater 0.5
+	qer_alphaFunc greater .5
 	surfaceparm nomarks
 	surfaceparm nonsolid
 	cull none
@@ -42,7 +42,7 @@ models/mapobjects/vega/plant/leaf1
 models/mapobjects/vega/plant/leaf2
 {
 	qer_editorImage models/mapobjects/vega/plant/leaf2
-	qer_alphaFunc greater 0.5
+	qer_alphaFunc greater .5
 
 	surfaceparm nomarks
 	surfaceparm nonsolid
@@ -71,7 +71,7 @@ models/mapobjects/vega/globe/globe
 	cull none
 	{
 		map models/mapobjects/vega/globe/globe
-		tcmod scroll .05 0.0
+		tcmod scroll .05 0
 	}
 }
 
@@ -180,7 +180,7 @@ models/mapobjects/vega/console/console_screens
 	{
 		blendfunc blend
 		map models/mapobjects/vega/console/console_waveform
-		tcmod scroll -0.5 0.0
+		tcmod scroll -.5 0
 	}
 }
 

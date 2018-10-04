@@ -25,9 +25,9 @@ particles/vega_custom/bubbles
 
 			bounce                  0
 			// radius <delay> <initial> <final>
-			radius                  0 0.125~0.025 0.25 
+			radius                  0 .125~.025 .25 
 			// alpha <delay> <initial> <final>
-			alpha                   0 0.7~0.1 1.0
+			alpha                   0 .7~.1 1
 			// rotation                0 ~360 -
 			lifetime                800
 		}
@@ -62,7 +62,7 @@ particles/vega_custom/smoke
 			// radius <delay> <initial> <final>
 			radius                  0 24~6 128 
 			// alpha <delay> <initial> <final>
-			alpha                   0 0.3~0.1 0.0
+			alpha                   0 .3~.1 0
 			rotation                0 ~360 -
 			lifetime              	10000
 		}

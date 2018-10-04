@@ -96,7 +96,7 @@ textures/vega_custom/white_nonsolid_150
 textures/vega_custom/vega_banner
 {
 	qer_editorImage textures/vega_custom_src/vega_banner_b
-	qer_alphaFunc greater 0.5
+	qer_alphaFunc greater .5
 
 	surfaceparm nomarks
 	surfaceparm nonsolid
@@ -122,7 +122,7 @@ textures/vega_custom/vega_banner
 textures/vega_custom/vega_motto
 {
 	qer_editorImage textures/vega_custom_src/vega_motto_b
-	qer_alphaFunc greater 0.5
+	qer_alphaFunc greater .5
 
 	surfaceparm nomarks
 	surfaceparm nonsolid
@@ -152,7 +152,7 @@ textures/vega_custom/vega_motto
 textures/vega_custom/arrow_elevator
 {
 	qer_editorImage textures/vega_custom_src/arrow_elevator_b
-	qer_alphaFunc greater 0.5
+	qer_alphaFunc greater .5
 
 	surfaceparm nomarks
 	surfaceparm nonsolid
@@ -178,7 +178,7 @@ textures/vega_custom/arrow_elevator
 textures/vega_custom/arrow_stairs
 {
 	qer_editorImage textures/vega_custom_src/arrow_stairs_b
-	qer_alphaFunc greater 0.5
+	qer_alphaFunc greater .5
 
 	surfaceparm nomarks
 	surfaceparm nonsolid
@@ -207,7 +207,7 @@ textures/vega_custom/arrow_stairs
 textures/vega_custom/sign_gate1
 {
 	qer_editorImage textures/vega_custom_src/sign_gate1_b
-	qer_alphaFunc greater 0.5
+	qer_alphaFunc greater .5
 
 	surfaceparm nomarks
 	surfaceparm nonsolid
@@ -233,7 +233,7 @@ textures/vega_custom/sign_gate1
 textures/vega_custom/sign_gate2
 {
 	qer_editorImage textures/vega_custom_src/sign_gate2_b
-	qer_alphaFunc greater 0.5
+	qer_alphaFunc greater .5
 
 	surfaceparm nomarks
 	surfaceparm nonsolid
@@ -259,7 +259,7 @@ textures/vega_custom/sign_gate2
 textures/vega_custom/sign_hatch
 {
 	qer_editorImage textures/vega_custom_src/sign_hatch_b
-	qer_alphaFunc greater 0.5
+	qer_alphaFunc greater .5
 
 	surfaceparm nomarks
 	surfaceparm nonsolid
@@ -285,7 +285,7 @@ textures/vega_custom/sign_hatch
 textures/vega_custom/sign_workshop
 {
 	qer_editorImage textures/vega_custom_src/sign_workshop_b
-	qer_alphaFunc greater 0.5
+	qer_alphaFunc greater .5
 
 	surfaceparm nomarks
 	surfaceparm nonsolid
@@ -321,12 +321,12 @@ textures/vega_custom/holo_gate1
 	q3map_surfacelight 150
 
 	// blue light #00baff
-	q3map_lightRGB 0.0 0.7924 1.0
+	q3map_lightRGB 0 .7924 1
 
 	// scrolling background
 	{
 		map textures/vega_custom_src/arrow_holo_b
-		tcmod scroll 0.0 0.25
+		tcmod scroll 0 .25
 		blendFunc filter
 	}
 
@@ -348,12 +348,12 @@ textures/vega_custom/holo_gate2_broken
 	q3map_surfacelight 150
 
 	// blue light #00baff
-	q3map_lightRGB 0.0 0.7924 1.0
+	q3map_lightRGB 0 .7924 1
 
 	// scrolling background
 	{
 		map textures/vega_custom_src/arrow_holo_b
-		tcmod scroll 0.0 0.25
+		tcmod scroll 0 .25
 		blendFunc filter
 	}
 
@@ -376,12 +376,12 @@ textures/vega_custom/holo_workshop_broken
 	q3map_surfacelight 150
 
 	// blue light #00baff
-	q3map_lightRGB 0.0 0.7924 1.0
+	q3map_lightRGB 0 .7924 1
 
 	// scrolling background
 	{
 		map textures/vega_custom_src/arrow_holo_b
-		tcmod scroll 0.0 0.25
+		tcmod scroll 0 .25
 		blendFunc filter
 	}
 
@@ -404,12 +404,12 @@ textures/vega_custom/holo_observatory
 	q3map_surfacelight 150
 
 	// blue light #00baff
-	q3map_lightRGB 0.0 0.7924 1.0
+	q3map_lightRGB 0 .7924 1
 
 	// scrolling background
 	{
 		map textures/vega_custom_src/arrow_holo_b
-		tcmod scroll 0.0 0.25
+		tcmod scroll 0 .25
 		blendFunc filter
 	}
 
@@ -457,7 +457,7 @@ textures/vega_custom/starchart02
 textures/vega_custom/roadstrip
 {
 	qer_editorImage textures/vega_custom_src/roadstrip_b
-	qer_alphaFunc greater 0.5
+	qer_alphaFunc greater .5
 
 	surfaceparm nomarks
 	surfaceparm nonsolid
@@ -483,7 +483,7 @@ textures/vega_custom/roadstrip
 textures/vega_custom/wheeltracks
 {
 	qer_editorImage textures/vega_custom_src/wheeltracks_b
-	qer_alphaFunc greater 0.135
+	qer_alphaFunc greater .135
 
 	surfaceparm nomarks
 	surfaceparm nonsolid
@@ -508,7 +508,7 @@ textures/vega_custom/squarelight01_red_150
 	qer_editorImage textures/shared_vega_src/squarelight01_red_p
 
 	// red
-	q3map_lightRGB 1.0 0.0 0.0
+	q3map_lightRGB 1 0 0
 	q3map_surfacelight 150
 
 	diffuseMap	textures/shared_vega_src/squarelight01_d
@@ -517,9 +517,9 @@ textures/vega_custom/squarelight01_red_150
 	{
 		blend add
 		map textures/shared_vega_src/squarelight01_a
-		red 1.0
-		green 0.0
-		blue 0.0
+		red 1
+		green 0
+		blue 0
 	}
 }
 
@@ -533,7 +533,7 @@ textures/vega_custom/holo_projector
 	qer_trans .7
 
 	q3map_surfacelight 25
-	q3map_lightRGB 1.0 1.0 1.0
+	q3map_lightRGB 1 1 1
 
 	surfaceparm nonsolid
 	surfaceparm noimpact
@@ -542,7 +542,7 @@ textures/vega_custom/holo_projector
 
 	{
 		map textures/vega_custom_src/holo_projector_b
-		tcmod scroll 0.10 0.25
+		tcmod scroll .10 .25
 
 		blendFunc blend
 	}
