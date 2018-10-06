@@ -1,0 +1,1 @@
+copy models/mapobjects/KOsAD/conteneur/rust06e.jpg
