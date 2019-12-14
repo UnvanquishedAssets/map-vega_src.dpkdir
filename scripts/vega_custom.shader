@@ -6,13 +6,13 @@
 // Vega texture set. Some textures have been replaced,
 // others have been updated, with higher resolution versions
 // were possible.
-// 
+//
 // http://ingar.satgnu.net
 // ingar@telenet.be
 //
 
 // ------------------------------------------------------------
-// Notes 
+// Notes
 
 // To preserve compatibility with the Xonotic conversion,
 // shader names should match with the name of the diffuse map
@@ -36,7 +36,9 @@ textures/vega_custom/black
 {
 	qer_editorImage textures/common_src/black_p
 
-	diffuseMap textures/common_src/black_d
+	{
+		diffuseMap textures/common_src/black_d
+	}
 
 	surfaceparm nomarks
 	surfaceparm nolightmap
@@ -47,7 +49,9 @@ textures/vega_custom/black_nonsolid
 {
 	qer_editorImage textures/common_src/black_p
 
-	diffuseMap textures/common_src/black_d
+	{
+		diffuseMap textures/common_src/black_d
+	}
 
 	surfaceparm nomarks
 	surfaceparm nolightmap
@@ -59,7 +63,9 @@ textures/vega_custom/white
 {
 	qer_editorImage textures/vega_custom_src/white_d
 
-	diffuseMap textures/vega_custom_src/white_d
+	{
+		diffuseMap textures/vega_custom_src/white_d
+	}
 
 	surfaceparm nomarks
 	surfaceparm nolightmap
@@ -71,7 +77,9 @@ textures/vega_custom/white_nonsolid
 {
 	qer_editorImage textures/vega_custom_src/white_d
 
-	diffuseMap textures/vega_custom_src/white_d
+	{
+		diffuseMap textures/vega_custom_src/white_d
+	}
 
 	surfaceparm nomarks
 	surfaceparm nolightmap
@@ -82,7 +90,9 @@ textures/vega_custom/white_nonsolid_150
 {
 	qer_editorImage textures/vega_custom_src/white_d
 
-	diffuseMap textures/vega_custom_src/white_d
+	{
+		diffuseMap textures/vega_custom_src/white_d
+	}
 
 	surfaceparm nomarks
 	surfaceparm nolightmap
@@ -106,16 +116,9 @@ textures/vega_custom/vega_banner
 	noShadows
 
 	{
-		map textures/vega_custom_src/vega_banner_b
+		diffuseMap textures/vega_custom_src/vega_banner_b
 		alphafunc GE128
 		depthwrite
-		rgbGen identity
-	}
-	{
-		rgbGen identity
-		map $lightmap
-		depthfunc equal
-		blendFunc filter
 	}
 }
 
@@ -132,16 +135,9 @@ textures/vega_custom/vega_motto
 	noShadows
 
 	{
-		map textures/vega_custom_src/vega_motto_b
+		diffuseMap textures/vega_custom_src/vega_motto_b
 		alphafunc GE128
 		depthwrite
-		rgbGen identity
-	}
-	{
-		rgbGen identity
-		map $lightmap
-		depthfunc equal
-		blendFunc filter
 	}
 }
 
@@ -162,16 +158,9 @@ textures/vega_custom/arrow_elevator
 	noShadows
 
 	{
-		map textures/vega_custom_src/arrow_elevator_b
+		diffuseMap textures/vega_custom_src/arrow_elevator_b
 		alphafunc GE128
 		depthwrite
-		rgbGen identity
-	}
-	{
-		rgbGen identity
-		map $lightmap
-		depthfunc equal
-		blendFunc filter
 	}
 }
 
@@ -188,16 +177,9 @@ textures/vega_custom/arrow_stairs
 	noShadows
 
 	{
-		map textures/vega_custom_src/arrow_stairs_b
+		diffuseMap textures/vega_custom_src/arrow_stairs_b
 		alphafunc GE128
 		depthwrite
-		rgbGen identity
-	}
-	{
-		rgbGen identity
-		map $lightmap
-		depthfunc equal
-		blendFunc filter
 	}
 }
 
@@ -217,16 +199,9 @@ textures/vega_custom/sign_gate1
 	noShadows
 
 	{
-		map textures/vega_custom_src/sign_gate1_b
+		diffuseMap textures/vega_custom_src/sign_gate1_b
 		alphafunc GE128
 		depthwrite
-		rgbGen identity
-	}
-	{
-		rgbGen identity
-		map $lightmap
-		depthfunc equal
-		blendFunc filter
 	}
 }
 
@@ -243,16 +218,9 @@ textures/vega_custom/sign_gate2
 	noShadows
 
 	{
-		map textures/vega_custom_src/sign_gate2_b
+		diffuseMap textures/vega_custom_src/sign_gate2_b
 		alphafunc GE128
 		depthwrite
-		rgbGen identity
-	}
-	{
-		rgbGen identity
-		map $lightmap
-		depthfunc equal
-		blendFunc filter
 	}
 }
 
@@ -269,16 +237,9 @@ textures/vega_custom/sign_hatch
 	noShadows
 
 	{
-		map textures/vega_custom_src/sign_hatch_b
+		diffuseMap textures/vega_custom_src/sign_hatch_b
 		alphafunc GE128
 		depthwrite
-		rgbGen identity
-	}
-	{
-		rgbGen identity
-		map $lightmap
-		depthfunc equal
-		blendFunc filter
 	}
 }
 
@@ -295,16 +256,9 @@ textures/vega_custom/sign_workshop
 	noShadows
 
 	{
-		map textures/vega_custom_src/sign_workshop_b
+		diffuseMap textures/vega_custom_src/sign_workshop_b
 		alphafunc GE128
 		depthwrite
-		rgbGen identity
-	}
-	{
-		rgbGen identity
-		map $lightmap
-		depthfunc equal
-		blendFunc filter
 	}
 }
 
@@ -465,17 +419,11 @@ textures/vega_custom/roadstrip
 	polygonOffset
 	sort decal
 	noShadows
+
 	{
-		map textures/vega_custom_src/roadstrip_b
+		diffuseMap textures/vega_custom_src/roadstrip_b
 		alphafunc GE128
 		depthwrite
-		rgbGen identity
-	}
-	{
-		rgbGen identity
-		map $lightmap
-		depthfunc equal
-		blendFunc filter
 	}
 }
 
@@ -511,15 +459,17 @@ textures/vega_custom/squarelight01_red_150
 	q3map_lightRGB 1 0 0
 	q3map_surfacelight 150
 
-	diffuseMap	textures/shared_vega_src/squarelight01_d
-	normalMap	textures/shared_vega_src/squarelight01_n
-	specularmap	textures/shared_vega_src/squarelight01_s
 	{
-		blend add
-		map textures/shared_vega_src/squarelight01_a
-		red 1
+		diffuseMap  textures/shared_vega_src/squarelight01_d
+		normalMap   textures/shared_vega_src/squarelight01_n
+		specularMap textures/shared_vega_src/squarelight01_s
+	}
+	{
+		map         textures/shared_vega_src/squarelight01_a
+		blendFunc add
+		red   1
 		green 0
-		blue 0
+		blue  0
 	}
 }
 
@@ -537,7 +487,7 @@ textures/vega_custom/holo_projector
 
 	surfaceparm nonsolid
 	surfaceparm noimpact
-	surfaceparm nomarks        
+	surfaceparm nomarks
 	cull none
 
 	{
@@ -556,7 +506,9 @@ textures/vega_custom/holo_projector
 textures/vega_custom/water_bubble
 {
 	qer_editorImage textures/vega_custom_src/bubble_b
+
 	cull none
+
 	// from http://www.quake3world.com/forum/viewtopic.php?f=10&t=11941&view=next
 	//
 	// entityMergable, allowing sprite surfaces from multiple entities
@@ -564,8 +516,9 @@ textures/vega_custom/water_bubble
 	// puffs and blood, but can't be used for anything where the
 	// shader calcs (not the surface function) reference the entity color or scroll
 	//
-	// As I understand it, this means multiple particle systems can be drawn in 
+	// As I understand it, this means multiple particle systems can be drawn in
 	// a batch. I don't know if this actually works
+
 	entityMergable
 	{
 		map textures/vega_custom_src/bubble_b
@@ -580,11 +533,12 @@ textures/vega_custom/smoke
 	qer_editorImage textures/vega_custom_src/smoke_b
 	cull none
 	entityMergable
+
 	{
 		map textures/vega_custom_src/smoke_b
-		//blendFunc blend
+		// blendFunc blend
 		blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-		//rgbGen          vertex
-		alphaGen        vertex
+		// rgbGen vertex
+		alphaGen vertex
 	}
 }

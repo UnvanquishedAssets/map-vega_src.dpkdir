@@ -15,20 +15,15 @@ models/mapobjects/vega/plant/leaf1
 
 	qer_editorImage models/mapobjects/vega/plant/leaf1
 	qer_alphaFunc greater .5
+
 	surfaceparm nomarks
 	surfaceparm nonsolid
 	cull none
+
 	{
-		map models/mapobjects/vega/plant/leaf1
+		diffuseMap models/mapobjects/vega/plant/leaf1
 		alphafunc GE128
 		depthwrite
-		rgbGen identity
-	}
-	{
-		rgbGen identity
-		map $lightmap
-		depthfunc equal
-		blendfunc filter
 	}
 }
 
@@ -47,17 +42,11 @@ models/mapobjects/vega/plant/leaf2
 	surfaceparm nomarks
 	surfaceparm nonsolid
 	cull none
+
 	{
-		map models/mapobjects/vega/plant/leaf2
+		diffuseMap models/mapobjects/vega/plant/leaf2
 		alphafunc GE128
 		depthwrite
-		rgbGen identity
-	}
-	{
-		rgbGen identity
-		map $lightmap
-		depthfunc equal
-		blendfunc filter
 	}
 }
 
@@ -69,6 +58,7 @@ models/mapobjects/vega/globe/globe
 	surfaceparm nomarks
 	surfaceparm nonsolid
 	cull none
+
 	{
 		map models/mapobjects/vega/globe/globe
 		tcmod scroll .05 0
@@ -81,18 +71,10 @@ models/mapobjects/vega/globe/globe
 models/mapobjects/vega/emitter/emitter
 {
 	surfaceparm nomarks
+
 	{
-		map models/mapobjects/vega/emitter/emitter
-		rgbGen identity
-	}
-	{
-		map $lightmap 
-		blendfunc filter
-		rgbGen identity
-	}
-	{
-		map models/mapobjects/vega/emitter/emitter_glow
-		blendfunc add
+		diffuseMap models/mapobjects/vega/emitter/emitter
+		glowMap    models/mapobjects/vega/emitter/emitter_glow
 	}
 }
 
@@ -121,18 +103,10 @@ models/mapobjects/vega/vehicle/suspension:q3map
 models/mapobjects/vega/monitor/monitor
 {
 	surfaceparm nomarks
+
 	{
-		map models/mapobjects/vega/monitor/monitor
-		rgbGen identity
-	}
-	{
-		map $lightmap 
-		blendfunc filter
-		rgbGen identity
-	}
-	{
-		map models/mapobjects/vega/monitor/monitor_light
-		blendfunc add
+		diffuseMap models/mapobjects/vega/monitor/monitor
+		glowMap    models/mapobjects/vega/monitor/monitor_light
 	}
 }
 
@@ -141,6 +115,7 @@ models/mapobjects/vega/monitor/display_text
 {
 	surfaceparm nomarks
 	surfaceparm nolightmap
+
 	{
 		map models/mapobjects/vega/monitor/display_text
 	}
@@ -151,6 +126,7 @@ models/mapobjects/vega/monitor/display_door_blue
 {
 	surfaceparm nomarks
 	surfaceparm nolightmap
+
 	{
 		map models/mapobjects/vega/monitor/display_door_blue
 	}
@@ -161,6 +137,7 @@ models/mapobjects/vega/monitor/display_door_red
 {
 	surfaceparm nomarks
 	surfaceparm nolightmap
+
 	{
 		map models/mapobjects/vega/monitor/display_door_red
 	}
@@ -174,9 +151,11 @@ models/mapobjects/vega/console/console_screens
 {
 	surfaceparm nomarks
 	surfaceparm nolightmap
+
 	{
 		map models/mapobjects/vega/console/console_screens
 	}
+
 	{
 		blendfunc blend
 		map models/mapobjects/vega/console/console_waveform
@@ -192,10 +171,12 @@ models/mapobjects/vega/ceilinglight/ceilinglight1
 {
 	qer_editorImage models/mapobjects/vega/ceilinglight/ceilinglight1_p
 
-	diffuseMap 	models/mapobjects/vega/ceilinglight/ceilinglight1_d
-	normalMap	models/mapobjects/vega/ceilinglight/ceilinglight1_n
-	specularMap	models/mapobjects/vega/ceilinglight/ceilinglight1_s
-	glowMap		models/mapobjects/vega/ceilinglight/ceilinglight1_a
+	{
+		diffuseMap  models/mapobjects/vega/ceilinglight/ceilinglight1_d
+		normalMap   models/mapobjects/vega/ceilinglight/ceilinglight1_n
+		specularMap models/mapobjects/vega/ceilinglight/ceilinglight1_s
+		glowMap     models/mapobjects/vega/ceilinglight/ceilinglight1_a
+	}
 }
 
 // tubular ceiling light
@@ -203,10 +184,12 @@ models/mapobjects/vega/ceilinglight/ceilinglight2
 {
 	qer_editorImage models/mapobjects/vega/ceilinglight/ceilinglight2_p
 
-	diffuseMap 	models/mapobjects/vega/ceilinglight/ceilinglight2_d
-	normalMap	models/mapobjects/vega/ceilinglight/ceilinglight2_n
-	specularMap	models/mapobjects/vega/ceilinglight/ceilinglight2_s
-	glowMap		models/mapobjects/vega/ceilinglight/ceilinglight2_a
+	{
+		diffuseMap  models/mapobjects/vega/ceilinglight/ceilinglight2_d
+		normalMap   models/mapobjects/vega/ceilinglight/ceilinglight2_n
+		specularMap models/mapobjects/vega/ceilinglight/ceilinglight2_s
+		glowMap     models/mapobjects/vega/ceilinglight/ceilinglight2_a
+	}
 }
 
 // tubular ceiling light (brown)
@@ -214,10 +197,12 @@ models/mapobjects/vega/ceilinglight/ceilinglight2a
 {
 	qer_editorImage models/mapobjects/vega/ceilinglight/ceilinglight2a_p
 
-	diffuseMap 	models/mapobjects/vega/ceilinglight/ceilinglight2_d
-	normalMap	models/mapobjects/vega/ceilinglight/ceilinglight2_n
-	specularMap	models/mapobjects/vega/ceilinglight/ceilinglight2_s
-	glowMap		models/mapobjects/vega/ceilinglight/ceilinglight2a_a
+	{
+		diffuseMap  models/mapobjects/vega/ceilinglight/ceilinglight2_d
+		normalMap   models/mapobjects/vega/ceilinglight/ceilinglight2_n
+		specularMap models/mapobjects/vega/ceilinglight/ceilinglight2_s
+		glowMap     models/mapobjects/vega/ceilinglight/ceilinglight2a_a
+	}
 }
 
 // . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
@@ -227,20 +212,24 @@ models/mapobjects/vega/terminal/terminal1
 {
 	qer_editorImage models/mapobjects/vega/terminal/terminal1_p
 
-	diffuseMap 	models/mapobjects/vega/terminal/terminal1_d
-	normalMap	models/mapobjects/vega/terminal/terminal1_n
-	specularMap	models/mapobjects/vega/terminal/terminal1_s
-	glowMap 	models/mapobjects/vega/terminal/terminal1_a
+	{
+		diffuseMap  models/mapobjects/vega/terminal/terminal1_d
+		normalMap   models/mapobjects/vega/terminal/terminal1_n
+		specularMap models/mapobjects/vega/terminal/terminal1_s
+		glowMap     models/mapobjects/vega/terminal/terminal1_a
+	}
 }
 
 models/mapobjects/vega/terminal/terminal2
 {
 	qer_editorImage models/mapobjects/vega/terminal/terminal2_p
 
-	diffuseMap 	models/mapobjects/vega/terminal/terminal2_d
-	normalMap	models/mapobjects/vega/terminal/terminal2_n
-	specularMap	models/mapobjects/vega/terminal/terminal2_s
-	glowMap 	models/mapobjects/vega/terminal/terminal2_a
+	{
+		diffuseMap  models/mapobjects/vega/terminal/terminal2_d
+		normalMap   models/mapobjects/vega/terminal/terminal2_n
+		specularMap models/mapobjects/vega/terminal/terminal2_s
+		glowMap     models/mapobjects/vega/terminal/terminal2_a
+	}
 }
 
 // . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
@@ -250,7 +239,9 @@ models/mapobjects/vega/cannister/cannister01
 {
 	qer_editorImage models/mapobjects/vega/cannister/cannister01
 
-	diffuseMap models/mapobjects/vega/cannister/cannister01
+	{
+		diffuseMap models/mapobjects/vega/cannister/cannister01
+	}
 }
 
 models/mapobjects/vega/cannister/cannister01_nocull
@@ -259,7 +250,9 @@ models/mapobjects/vega/cannister/cannister01_nocull
 
 	cull none
 
-	diffuseMap models/mapobjects/vega/cannister/cannister01
+	{
+		diffuseMap models/mapobjects/vega/cannister/cannister01
+	}
 }
 
 // . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
@@ -273,7 +266,9 @@ models/mapobjects/vega/box/box02
 	cull none
 	polygonOffset
 
-	diffuseMap models/mapobjects/vega/box/box01
+	{
+		diffuseMap models/mapobjects/vega/box/box01
+	}
 }
 
 // . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
@@ -282,10 +277,12 @@ models/mapobjects/vega/box/box02
 models/mapobjects/vega/pump/pump
 {
 	qer_editorImage models/mapobjects/vega/pump/pump
+
 	{
 		map models/mapobjects/vega/pump/pump
 		rgbGen lightingDiffuse
 	}
+
 	// fake lightmap
 	{
 		map textures/shared_vega_src/base03a_d
@@ -296,10 +293,12 @@ models/mapobjects/vega/pump/pump
 models/mapobjects/vega/pump/pipe
 {
 	qer_editorImage textures/shared_vega_src/rust01_d
+
 	{
 		map textures/shared_vega_src/rust01_d
 		rgbGen lightingDiffuse
 	}
+
 	// fake lightmap
 	{
 		map textures/shared_vega_src/base03a_d
@@ -311,9 +310,10 @@ models/mapobjects/vega/pump/pipe
 models/mapobjects/vega/pump/needle
 {
 	qer_editorImage models/mapobjects/vega/pump/needle
+
 	polygonOffset
-        {
+	{
 		map models/mapobjects/vega/pump/needle
 		blendfunc blend
-        }
+	}
 }
