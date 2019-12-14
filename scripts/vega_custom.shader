@@ -462,6 +462,7 @@ textures/vega_custom/squarelight01_red_150
 	{
 		diffuseMap  textures/shared_vega_src/squarelight01_d
 		normalMap   textures/shared_vega_src/squarelight01_n
+		normalFormat -X -Y Z
 		specularMap textures/shared_vega_src/squarelight01_s
 	}
 	{
