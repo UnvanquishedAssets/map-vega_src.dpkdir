@@ -85,6 +85,21 @@ textures/vega_custom/white_nonsolid
 	surfaceparm nolightmap
 }
 
+// white (nonsolid, glowing)
+textures/vega_custom/white_nonsolid_glow
+{
+	qer_editorImage textures/vega_custom_src/white_d
+
+	{
+		diffuseMap textures/vega_custom_src/white_d
+		glowMap textures/vega_custom_src/white_d
+	}
+
+	surfaceparm nomarks
+	surfaceparm nolightmap
+}
+
+
 // white (nonsolid, light)
 textures/vega_custom/white_nonsolid_150
 {
