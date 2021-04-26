@@ -11,7 +11,7 @@ _Vega Industries: Research Outpost 13_ is a game level featuring a futuristic re
 
 This map is a work in progress by Stijn “Ingar” Buys for the [Unvanquished](https://unvanquished.net) game project.
 
-This map makes use of the [`tex-vega`](../tex-vega_src.dpkdir/README.md) texture set available under the terms and conditions of either the Creative Commons Attribution-Share Alike 3.0 license or the General Public License, version 2.
+This map makes use of the [`tex-vega`](https://github.com/UnvanquishedAssets/tex-vega_src.dpkdir) texture set available under the terms and conditions of either the Creative Commons Attribution-Share Alike 3.0 license or the General Public License, version 2.
 
 This map is meant to be edited with a level editor like [NetRadiant](https://netradiant.gitlab.io/).
 
