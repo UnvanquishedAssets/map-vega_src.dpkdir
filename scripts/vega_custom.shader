@@ -130,6 +130,8 @@ textures/vega_custom/vega_banner
 	sort decal
 	noShadows
 
+	imageMinDimension 384
+
 	{
 		diffuseMap textures/vega_custom_src/vega_banner_b
 		alphafunc GE128
@@ -148,6 +150,8 @@ textures/vega_custom/vega_motto
 	polygonOffset
 	sort decal
 	noShadows
+
+	imageMinDimension 256
 
 	{
 		diffuseMap textures/vega_custom_src/vega_motto_b
@@ -172,6 +176,8 @@ textures/vega_custom/arrow_elevator
 	sort decal
 	noShadows
 
+	imageMinDimension 256
+
 	{
 		diffuseMap textures/vega_custom_src/arrow_elevator_b
 		alphafunc GE128
@@ -190,6 +196,8 @@ textures/vega_custom/arrow_stairs
 	polygonOffset
 	sort decal
 	noShadows
+
+	imageMinDimension 256
 
 	{
 		diffuseMap textures/vega_custom_src/arrow_stairs_b
@@ -213,6 +221,8 @@ textures/vega_custom/sign_gate1
 	sort decal
 	noShadows
 
+	imageMinDimension 256
+
 	{
 		diffuseMap textures/vega_custom_src/sign_gate1_b
 		alphafunc GE128
@@ -231,6 +241,8 @@ textures/vega_custom/sign_gate2
 	polygonOffset
 	sort decal
 	noShadows
+
+	imageMinDimension 256
 
 	{
 		diffuseMap textures/vega_custom_src/sign_gate2_b
@@ -251,6 +263,8 @@ textures/vega_custom/sign_hatch
 	sort decal
 	noShadows
 
+	imageMinDimension 256
+
 	{
 		diffuseMap textures/vega_custom_src/sign_hatch_b
 		alphafunc GE128
@@ -269,6 +283,8 @@ textures/vega_custom/sign_workshop
 	polygonOffset
 	sort decal
 	noShadows
+
+	imageMinDimension 256
 
 	{
 		diffuseMap textures/vega_custom_src/sign_workshop_b
@@ -291,6 +307,8 @@ textures/vega_custom/holo_gate1
 
 	// blue light #00baff
 	q3map_lightRGB 0 .7924 1
+
+	imageMinDimension 256
 
 	// scrolling background
 	{
@@ -318,6 +336,8 @@ textures/vega_custom/holo_gate2_broken
 
 	// blue light #00baff
 	q3map_lightRGB 0 .7924 1
+
+	imageMinDimension 256
 
 	// scrolling background
 	{
@@ -347,6 +367,8 @@ textures/vega_custom/holo_workshop_broken
 	// blue light #00baff
 	q3map_lightRGB 0 .7924 1
 
+	imageMinDimension 256
+
 	// scrolling background
 	{
 		map textures/vega_custom_src/arrow_holo_b
@@ -374,6 +396,8 @@ textures/vega_custom/holo_observatory
 
 	// blue light #00baff
 	q3map_lightRGB 0 .7924 1
+
+	imageMinDimension 256
 
 	// scrolling background
 	{
@@ -536,6 +560,9 @@ textures/vega_custom/water_bubble
 	// a batch. I don't know if this actually works
 
 	entityMergable
+
+	imageMinDimension 8
+
 	{
 		map textures/vega_custom_src/bubble_b
 		blendFunc blend
