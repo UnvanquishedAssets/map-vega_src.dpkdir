@@ -69,7 +69,6 @@ textures/vega_custom/white
 
 	surfaceparm nomarks
 	surfaceparm nolightmap
-	surfaceparm nonsolid
 }
 
 // white (nonsolid)
@@ -83,6 +82,7 @@ textures/vega_custom/white_nonsolid
 
 	surfaceparm nomarks
 	surfaceparm nolightmap
+	surfaceparm nonsolid
 }
 
 // white (nonsolid, glowing)
