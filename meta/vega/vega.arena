@@ -1,6 +1,7 @@
 {
-  map       "vega"
-  longname  "Vega Industries: Research Outpost 13 ^1| beta 4^7"
-  type      "tremulous"
+	map "vega"
+	longname "Vega Industries: Research Outpost 13"
+	author "Ingar"
+	type "tremulous"
 }
 
