@@ -1,7 +1,7 @@
 Vega game level for Unvanquished
 ================================
 
-![Vega levelshot](meta/vega/vega.jpg)
+![Vega levelshot](meta/vega/vega.webp)
 
 
 About
