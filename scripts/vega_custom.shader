@@ -11,7 +11,7 @@
 // ingar@telenet.be
 //
 
-// ------------------------------------------------------------
+// -----
 // Notes
 
 // To preserve compatibility with the Xonotic conversion,
@@ -25,10 +25,10 @@
 // q3map_lightimage and q3map_lightstyle don't work
 //
 
-// ------------------------------------------------------------
+// ------------------
 // CUSTOM MAP SHADERS
 
-// . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+// ===
 // plain colors
 
 // white (nonsolid, glowing)
@@ -60,7 +60,7 @@ textures/vega_custom/white_nonsolid_150
 	q3map_surfacelight 150
 }
 
-// . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+// ===
 // vega industries logos
 
 textures/vega_custom/vega_banner
@@ -106,7 +106,7 @@ textures/vega_custom/vega_motto
 }
 
 
-// . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+// ===
 // arrows
 
 textures/vega_custom/arrow_elevator
@@ -151,7 +151,7 @@ textures/vega_custom/arrow_stairs
 	}
 }
 
-// . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+// ===
 // panel signs
 
 textures/vega_custom/sign_gate1
@@ -238,7 +238,7 @@ textures/vega_custom/sign_workshop
 	}
 }
 
-// . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+// ===
 // holo signs
 
 textures/vega_custom/holo_gate1
@@ -359,7 +359,7 @@ textures/vega_custom/holo_observatory
 	}
 }
 
-// . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+// ===
 // starcharts
 
 textures/vega_custom/starchart01
@@ -389,7 +389,7 @@ textures/vega_custom/starchart02
 
 }
 
-// . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+// ===
 // overlays
 
 textures/vega_custom/roadstrip
@@ -432,7 +432,7 @@ textures/vega_custom/wheeltracks
 	}
 }
 
-// . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+// ===
 // custom lights
 
 textures/vega_custom/squarelight01_red_150
@@ -444,21 +444,21 @@ textures/vega_custom/squarelight01_red_150
 	q3map_surfacelight 150
 
 	{
-		diffuseMap  textures/shared_vega_src/squarelight01_d
-		normalMap   textures/shared_vega_src/squarelight01_n
+		diffuseMap textures/shared_vega_src/squarelight01_d
+		normalMap textures/shared_vega_src/squarelight01_n
 		normalFormat -X -Y Z
 		specularMap textures/shared_vega_src/squarelight01_s
 	}
 	{
-		map         textures/shared_vega_src/squarelight01_a
+		map textures/shared_vega_src/squarelight01_a
 		blendFunc add
-		red   1
+		red 1
 		green 0
-		blue  0
+		blue 0
 	}
 }
 
-// . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+// ===
 // misc effects
 
 // holo projector beam
@@ -484,7 +484,7 @@ textures/vega_custom/holo_projector
 }
 
 
-// . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+// ===
 // Particle systems
 
 // water bubble
@@ -514,7 +514,7 @@ textures/vega_custom/water_bubble
 	}
 }
 
-// . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+// ===
 // smoke
 textures/vega_custom/smoke
 {

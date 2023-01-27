@@ -13,23 +13,23 @@ particles/vega_custom/bubbles
 			shader sync textures/vega_custom/water_bubble
 			displacement -4 -4 -4 ~8
 
-			velocityType		static
-			velocityDir		linear
-			velocityMagnitude	15	
-			velocity		0 0 100 ~1
+			velocityType static
+			velocityDir linear
+			velocityMagnitude 15
+			velocity 0 0 100 ~1
 
-			accelerationType        static
-			accelerationDir         linear
-			acceleration            0 0 150 ~1
-			accelerationMagnitude   10
+			accelerationType static
+			accelerationDir linear
+			acceleration 0 0 150 ~1
+			accelerationMagnitude 10
 
-			bounce                  0
+			bounce 0
 			// radius <delay> <initial> <final>
-			radius                  0 .125~.025 .25 
+			radius 0 .125~.025 .25
 			// alpha <delay> <initial> <final>
-			alpha                   0 .7~.1 1
-			// rotation                0 ~360 -
-			lifetime                800
+			alpha 0 .7~.1 1
+			// rotation 0 ~360 -
+			lifetime 800
 		}
 
 		count infinite
@@ -48,23 +48,23 @@ particles/vega_custom/smoke
 			shader sync textures/vega_custom/smoke
 			displacement -16 -16 -16 ~32
 
-			velocityType		static
-			velocityDir		linear
-			velocityMagnitude	50	
-			velocity		0 0 50 ~10
+			velocityType static
+			velocityDir linear
+			velocityMagnitude 50
+			velocity 0 0 50 ~10
 
-			accelerationType        static
-			accelerationDir         linear
-			acceleration            -55 0 30 ~5
-			accelerationMagnitude   50
+			accelerationType static
+			accelerationDir linear
+			acceleration -55 0 30 ~5
+			accelerationMagnitude 50
 
-			bounce                  0
+			bounce 0
 			// radius <delay> <initial> <final>
-			radius                  0 24~6 128 
+			radius 0 24~6 128
 			// alpha <delay> <initial> <final>
-			alpha                   0 .3~.1 0
-			rotation                0 ~360 -
-			lifetime              	10000
+			alpha 0 .3~.1 0
+			rotation 0 ~360 -
+			lifetime 10000
 		}
 
 		count infinite

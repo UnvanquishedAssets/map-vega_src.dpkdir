@@ -1,25 +1,24 @@
+	Title
 
-    Title
-    
 	Vega Industries: Research Outpost 13
 
-    Author
-    
+	Author
+
 	Stijn "Ingar" Buys <ingar@osirion.org>
 
-    Source
-    
+	Source
+
 	https://github.com/IngarKCT/map-vega
 
-    Description
-    
-	Map for the Unvanquished game project
-        https://unvanquished.net
-        
-    License
+	Description
 
-	The map Vega Industries: Research Outpost 13 and related 
-	assets are available under the conditions of 
+	Map for the Unvanquished game project
+		https://unvanquished.net
+
+	License
+
+	The map Vega Industries: Research Outpost 13 and related
+	assets are available under the conditions of
 	the CREATIVE COMMONS ATTRIBUTION-SHARE ALIKE 3.0 LICENSE
 
 	http://creativecommons.org/licenses/by-sa/3.0
@@ -27,7 +26,7 @@
 =============================================================================
 
 	For my father, he deserves a monument.
-	
+
 =============================================================================
 
 VEGA INDUSTRIES: RESEARCH OUTPOST 13
@@ -51,11 +50,11 @@ VEGA INDUSTRIES: RESEARCH OUTPOST 13
 	the scientists found it, hungry and exhausted, they couldn't resist
 	but to offer the poor creature some milk and cookies.
 
-	Kyp... a funny name for a funny creature. 
+	Kyp... a funny name for a funny creature.
 
 	Kyp didn't mind all the running around and neurotic button pushing.
 	After all, these weren't the usual kind of scientists: they seemed
-	more interested in keeping their machines running than indecently 
+	more interested in keeping their machines running than indecently
 	prodding caged creatures with their devices.
 
 	As usually happens in large corporations, the janitor was the first
@@ -69,29 +68,29 @@ VEGA INDUSTRIES: RESEARCH OUTPOST 13
 	supply had been acting weird all morning, and most of the equipment
 	seemed to disagree with their blueprint specifications. "That damned
 	rodent must have been shewing the cables. A few high-voltage jolts
-	will teach it some manners. Serves him well." The idea almost 
+	will teach it some manners. Serves him well." The idea almost
 	brought a smile to the janitor's face.
 
 	Almost.
 
-	The monster breathing down his neck was far from green and cuddly. 
+	The monster breathing down his neck was far from green and cuddly.
 	If anything, it looked like the scientists had delved too eagerly
 	and too deep and had awakened something that should have been
-	left alone. Two seconds later, the janitor's blood-stained 
+	left alone. Two seconds later, the janitor's blood-stained
 	broom hits the floor.
 
 	(To be continued)
-	
+
 	The tyrant was hardly impressed by the janitor's last screaming moments.
-	Humans are usually tasty and sweet, but the aroma of adrenaline	had spoiled 
+	Humans are usually tasty and sweet, but the aroma of adrenaline	had spoiled
 	the meat with a lingering bitter taste. What he wanted, was men with courage.
 	Men who wouldn't waver at the sight of his deadly teeth. Men, who'd provide
 	him a banquet with the delicious taste of heroism.
-	
+
 	Or women, for those who'd prefer a somewhat softer kind of meat.
-	
+
 	(To be continued)
-	
+
 SKYBOX
 
 	The Skybox was created with the personal edition of Terragen Classic
@@ -102,20 +101,20 @@ SKYBOX
 
 TEXTURES
 
-	The Vega texture set for Unvanquished is a complete overhaul 
+	The Vega texture set for Unvanquished is a complete overhaul
 	of the texture set mad for the Tremulous map. They were created
 	from pictures and edited with the GIMP. The Vega Industries logos
 	were made with Inkscape. Normal maps were generated with
 	Blender and the GIMP.
 
 	Contact me if you're interested in the original high-res images.
-	
+
 	The Easter Eggs cartoon was made by Josky=KCT=.
 
 MODELS
 
 	The monitor model and texture were made by f0rqu3.
-	The monitor display textures were made by Ingar, 
+	The monitor display textures were made by Ingar,
 	display background by Karvajalka.
 
 	The sign model was created by Karvajalka, textures by Ingar.
@@ -130,7 +129,7 @@ MODELS
 	textures by Thorn & Ingar.
 
 	The container and plant models and textures were made by Ingar.
-	
+
 	The cardboard box models and textures were made by Ingar.
 
 	The vehicle model was made by Ingar, the texture was generously
@@ -140,12 +139,12 @@ MODELS
 	"Sector B17" and was made by gareth.
 	http://tremulous.net/forum/index.php?topic=4478.0
 
-	The globe model was made by Ingar. 
-	The globe texture was created by Jeremy "Jestr" Gardner. 
+	The globe model was made by Ingar.
+	The globe texture was created by Jeremy "Jestr" Gardner.
 	The original, high-resolution version can be downloaded here:
 	http://www.celestiamotherlode.net/catalog/show_addon_details.php?addon_id=227
 
-	The blue plastic container model and the rack model were taken from 
+	The blue plastic container model and the rack model were taken from
 	the Tremulous map "Metro" and were made by KOsAD
 	http://sites.google.com/site/kosad93/metro.html
 
@@ -177,7 +176,7 @@ THANKS
 	Karvajalka for the awesome models
 
 	maci for hosting on satgnu
-	
+
 	Lava_Croft for testing and advice
 
 	#satgnu for support
@@ -191,13 +190,13 @@ THANKS
 	KOsAD for the models
 
 	Taiyo.uk for the slime shader and trigger example from the Tremulous map "Slimepunk"
-	
+
 	Georges 'TRaK' Grondin for the vehicle model texture.
 
 	The contributors of the pdsounds collection.
 
 	#tremulous on the freenode IRC network
-	
+
 	#unvanquished-dev on the freenode IRC network
 
 	All =KCT= members
@@ -207,26 +206,26 @@ HISTORY
 	2015-09-06
 		beta 4
 		official release for Unvanquished-0.43.0
-		
+
 		cleaned up texture filenames to be consistent with Unvanquished naming
 		added cardboard boxes
 		added gas cannisters
 		added metal table model
 		removed Workshop doors
-		
+
 	2015-08-02
 		beta 3
 		official release for Unvanquished-0.42.0
-		
+
 		split package into the a texture pack and the map itself
 		updated Mixer Hall
 		updated Observatory
 		improved ventilation shafts
-		
+
 	2015-07-26
 		beta 2
 		first official Unvanquished release
-		
+
 		complete texture overhaul
 		fixed a number of issues caused by the change of engine
 		removed q3map2 lightstyles
@@ -235,7 +234,7 @@ HISTORY
 		replaced a number of vent textures with brushwork
 		improved console monitor screens
 		added extra posters
-		
+
 	2010-09-10
 		beta 1
 		first official Tremulous release
@@ -307,7 +306,7 @@ HISTORY
 
 		initial pre-release
 		initial texture set release
-	
+
 	2009-12-12
 		first texture
 

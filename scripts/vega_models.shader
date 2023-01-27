@@ -3,10 +3,10 @@
 // Vega industries: Research Outpust 13
 //
 
-// -----------------------------------------------------------------
+// -------------
 // MODEL SHADERS
 
-// . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+// ===
 // plant models and textures by Ingar
 
 // plant leaf 1 with alpha channel
@@ -50,7 +50,7 @@ models/mapobjects/vega/plant/leaf2
 	}
 }
 
-// . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+// ===
 // globe model by Ingar, planet texture "Sedna" by Jestr
 
 models/mapobjects/vega/globe/globe
@@ -65,7 +65,7 @@ models/mapobjects/vega/globe/globe
 	}
 }
 
-// . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+// ===
 // holo emitter model and textures by Ingar
 
 models/mapobjects/vega/emitter/emitter
@@ -74,11 +74,11 @@ models/mapobjects/vega/emitter/emitter
 
 	{
 		diffuseMap models/mapobjects/vega/emitter/emitter
-		glowMap    models/mapobjects/vega/emitter/emitter_glow
+		glowMap models/mapobjects/vega/emitter/emitter_glow
 	}
 }
 
-// . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+// ===
 // container model and textures by Ingar
 
 // phong shaded round container
@@ -87,7 +87,7 @@ models/mapobjects/vega/emitter/emitter
 //	q3map_shadeangle 45
 //}
 
-// . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+// ===
 // vehicle model by Ingar, texture courtesy of TRaK
 
 models/mapobjects/vega/vehicle/suspension:q3map
@@ -96,7 +96,7 @@ models/mapobjects/vega/vehicle/suspension:q3map
 	surfaceparm nonsolid
 }
 
-// . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+// ===
 // monitor model by f0rqu3, shaders and display textures by Ingar
 
 // monitor body light
@@ -106,7 +106,7 @@ models/mapobjects/vega/monitor/monitor
 
 	{
 		diffuseMap models/mapobjects/vega/monitor/monitor
-		glowMap    models/mapobjects/vega/monitor/monitor_light
+		glowMap models/mapobjects/vega/monitor/monitor_light
 	}
 }
 
@@ -143,7 +143,7 @@ models/mapobjects/vega/monitor/display_door_red
 	}
 }
 
-// . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+// ===
 // console model by Thorn
 
 // console screens
@@ -163,7 +163,7 @@ models/mapobjects/vega/console/console_screens
 	}
 }
 
-// . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+// ===
 // ceiling light models and textures by Karvajalka
 
 // rectangular ceiling light
@@ -172,10 +172,10 @@ models/mapobjects/vega/ceilinglight/ceilinglight1
 	qer_editorImage models/mapobjects/vega/ceilinglight/ceilinglight1_p
 
 	{
-		diffuseMap  models/mapobjects/vega/ceilinglight/ceilinglight1_d
-		normalMap   models/mapobjects/vega/ceilinglight/ceilinglight1_n
+		diffuseMap models/mapobjects/vega/ceilinglight/ceilinglight1_d
+		normalMap models/mapobjects/vega/ceilinglight/ceilinglight1_n
 		specularMap models/mapobjects/vega/ceilinglight/ceilinglight1_s
-		glowMap     models/mapobjects/vega/ceilinglight/ceilinglight1_a
+		glowMap models/mapobjects/vega/ceilinglight/ceilinglight1_a
 	}
 }
 
@@ -185,10 +185,10 @@ models/mapobjects/vega/ceilinglight/ceilinglight2
 	qer_editorImage models/mapobjects/vega/ceilinglight/ceilinglight2_p
 
 	{
-		diffuseMap  models/mapobjects/vega/ceilinglight/ceilinglight2_d
-		normalMap   models/mapobjects/vega/ceilinglight/ceilinglight2_n
+		diffuseMap models/mapobjects/vega/ceilinglight/ceilinglight2_d
+		normalMap models/mapobjects/vega/ceilinglight/ceilinglight2_n
 		specularMap models/mapobjects/vega/ceilinglight/ceilinglight2_s
-		glowMap     models/mapobjects/vega/ceilinglight/ceilinglight2_a
+		glowMap models/mapobjects/vega/ceilinglight/ceilinglight2_a
 	}
 }
 
@@ -198,14 +198,14 @@ models/mapobjects/vega/ceilinglight/ceilinglight2a
 	qer_editorImage models/mapobjects/vega/ceilinglight/ceilinglight2a_p
 
 	{
-		diffuseMap  models/mapobjects/vega/ceilinglight/ceilinglight2_d
-		normalMap   models/mapobjects/vega/ceilinglight/ceilinglight2_n
+		diffuseMap models/mapobjects/vega/ceilinglight/ceilinglight2_d
+		normalMap models/mapobjects/vega/ceilinglight/ceilinglight2_n
 		specularMap models/mapobjects/vega/ceilinglight/ceilinglight2_s
-		glowMap     models/mapobjects/vega/ceilinglight/ceilinglight2a_a
+		glowMap models/mapobjects/vega/ceilinglight/ceilinglight2a_a
 	}
 }
 
-// . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+// ===
 // terminal models and textures by Karvajalka, display textures by Ingar
 
 models/mapobjects/vega/terminal/terminal1
@@ -213,10 +213,10 @@ models/mapobjects/vega/terminal/terminal1
 	qer_editorImage models/mapobjects/vega/terminal/terminal1_p
 
 	{
-		diffuseMap  models/mapobjects/vega/terminal/terminal1_d
-		normalMap   models/mapobjects/vega/terminal/terminal1_n
+		diffuseMap models/mapobjects/vega/terminal/terminal1_d
+		normalMap models/mapobjects/vega/terminal/terminal1_n
 		specularMap models/mapobjects/vega/terminal/terminal1_s
-		glowMap     models/mapobjects/vega/terminal/terminal1_a
+		glowMap models/mapobjects/vega/terminal/terminal1_a
 	}
 }
 
@@ -225,14 +225,14 @@ models/mapobjects/vega/terminal/terminal2
 	qer_editorImage models/mapobjects/vega/terminal/terminal2_p
 
 	{
-		diffuseMap  models/mapobjects/vega/terminal/terminal2_d
-		normalMap   models/mapobjects/vega/terminal/terminal2_n
+		diffuseMap models/mapobjects/vega/terminal/terminal2_d
+		normalMap models/mapobjects/vega/terminal/terminal2_n
 		specularMap models/mapobjects/vega/terminal/terminal2_s
-		glowMap     models/mapobjects/vega/terminal/terminal2_a
+		glowMap models/mapobjects/vega/terminal/terminal2_a
 	}
 }
 
-// . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+// ===
 // cannister model and textures by Ingar
 
 models/mapobjects/vega/cannister/cannister01
@@ -255,7 +255,7 @@ models/mapobjects/vega/cannister/cannister01_nocull
 	}
 }
 
-// . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+// ===
 // cardboard box model and textures by Ingar
 
 models/mapobjects/vega/box/box02
@@ -271,7 +271,7 @@ models/mapobjects/vega/box/box02
 	}
 }
 
-// . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+// ===
 // animated pump model by Thorn
 
 models/mapobjects/vega/pump/pump
