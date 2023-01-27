@@ -31,60 +31,6 @@
 // . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 // plain colors
 
-// black
-textures/vega_custom/black
-{
-	qer_editorImage textures/common_src/black_p
-
-	{
-		diffuseMap textures/common_src/black_d
-	}
-
-	surfaceparm nomarks
-	surfaceparm nolightmap
-}
-
-// black (nonsolid)
-textures/vega_custom/black_nonsolid
-{
-	qer_editorImage textures/common_src/black_p
-
-	{
-		diffuseMap textures/common_src/black_d
-	}
-
-	surfaceparm nomarks
-	surfaceparm nolightmap
-	surfaceparm nonsolid
-}
-
-// white
-textures/vega_custom/white
-{
-	qer_editorImage textures/vega_custom_src/white_d
-
-	{
-		diffuseMap textures/vega_custom_src/white_d
-	}
-
-	surfaceparm nomarks
-	surfaceparm nolightmap
-}
-
-// white (nonsolid)
-textures/vega_custom/white_nonsolid
-{
-	qer_editorImage textures/vega_custom_src/white_d
-
-	{
-		diffuseMap textures/vega_custom_src/white_d
-	}
-
-	surfaceparm nomarks
-	surfaceparm nolightmap
-	surfaceparm nonsolid
-}
-
 // white (nonsolid, glowing)
 textures/vega_custom/white_nonsolid_glow
 {
@@ -98,7 +44,6 @@ textures/vega_custom/white_nonsolid_glow
 	surfaceparm nomarks
 	surfaceparm nolightmap
 }
-
 
 // white (nonsolid, light)
 textures/vega_custom/white_nonsolid_150
