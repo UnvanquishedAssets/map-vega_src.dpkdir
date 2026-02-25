@@ -458,6 +458,23 @@ textures/vega_custom/squarelight01_red_150
 	}
 }
 
+// used above the toolkartt to produce a smooth shadow
+textures/vega_custom/panel06_300_8
+{
+	qer_editorImage textures/shared_vega_src/panel06_d
+
+	{
+		diffuseMap textures/shared_vega_src/panel06_d
+		normalMap textures/shared_vega_src/panel06_n
+		normalFormat -X -Y Z
+		specularMap textures/shared_vega_src/panel06_s
+		glowMap textures/shared_vega_src/panel06_a
+	}
+
+	q3map_surfacelight 300
+	q3map_lightSubdivide 8
+}
+
 // ===
 // misc effects
 
